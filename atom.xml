@@ -115,34 +115,6 @@
   </entry>
   
   <entry>
-    <title>对于blog的小要求</title>
-    <link href="http://sealical.com/2018/06/03/statement/"/>
-    <id>http://sealical.com/2018/06/03/statement/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-06-06T06:39:08.903Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Limitation"><a href="#Limitation" class="headerlink" title="Limitation"></a>Limitation</h3><ul><li>1.每周一篇博客（或一月至少三篇），对于重要引用给出来源。<br><br></li><li>2.慢慢优化界面，文章内容，主题板块。<br><br></li><li>3.</li></ul><hr><ul><li style="list-style: none"><input type="checkbox" checked> sad </li><li style="list-style: none"><input type="checkbox"> happy</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Limitation&quot;&gt;&lt;a href=&quot;#Limitation&quot; class=&quot;headerlink&quot; title=&quot;Limitation&quot;&gt;&lt;/a&gt;Limitation&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;1.每周一篇博客（或一月至少三篇），对于重要引用给出来源。&lt;br
-      
-    
-    </summary>
-    
-      <category term="杂谈" scheme="http://sealical.com/categories/%E6%9D%82%E8%B0%88/"/>
-    
-      <category term="关于博客" scheme="http://sealical.com/categories/%E6%9D%82%E8%B0%88/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="Other" scheme="http://sealical.com/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我的博客的创建</title>
     <link href="http://sealical.com/2018/06/03/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
     <id>http://sealical.com/2018/06/03/我的博客创建过程/</id>
@@ -158,6 +130,34 @@
         
 &lt;p&gt;&lt;img src=&quot;eximg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Hexo框架和托管于Github&quot;&gt;&lt;a href=&quot;#Hexo框架和托管于Github&quot; class=&quot;headerlink&quot; title=&quot;Hexo框架和托管于Github&quot;&gt;&lt;/a&gt;H
+      
+    
+    </summary>
+    
+      <category term="杂谈" scheme="http://sealical.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="关于博客" scheme="http://sealical.com/categories/%E6%9D%82%E8%B0%88/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Other" scheme="http://sealical.com/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对于blog的小要求</title>
+    <link href="http://sealical.com/2018/06/03/statement/"/>
+    <id>http://sealical.com/2018/06/03/statement/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-06-06T06:39:08.903Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Limitation"><a href="#Limitation" class="headerlink" title="Limitation"></a>Limitation</h3><ul><li>1.每周一篇博客（或一月至少三篇），对于重要引用给出来源。<br><br></li><li>2.慢慢优化界面，文章内容，主题板块。<br><br></li><li>3.</li></ul><hr><ul><li style="list-style: none"><input type="checkbox" checked> sad </li><li style="list-style: none"><input type="checkbox"> happy</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Limitation&quot;&gt;&lt;a href=&quot;#Limitation&quot; class=&quot;headerlink&quot; title=&quot;Limitation&quot;&gt;&lt;/a&gt;Limitation&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;1.每周一篇博客（或一月至少三篇），对于重要引用给出来源。&lt;br
       
     
     </summary>
