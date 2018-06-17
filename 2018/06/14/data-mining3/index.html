@@ -9,7 +9,7 @@
 
 <title>
     
-    material |
+    《数据挖掘》第三部分：数据仓库和联机分析处理 |
     
     Sealical&#39;s Blog</title>
 <!--end title-->
@@ -226,7 +226,7 @@
             
             <i class="fh fh-newspaper-o" aria-hidden="true"></i>
             
-            material
+            《数据挖掘》第三部分：数据仓库和联机分析处理
         </li>
         
     </ul>
@@ -243,11 +243,11 @@
 </div>
         <!--end breadcrumb-->
         <article class="post animated rollIn">
-    <h1 class="post-title">material</h1>
+    <h1 class="post-title">《数据挖掘》第三部分：数据仓库和联机分析处理</h1>
     <div class="post-subtitle">
         
-        <time datetime="2018-06-09T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-10
+        <time datetime="2018-06-13T16:00:00.000Z" class="item">
+            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-14
         </time>
         
         
@@ -272,224 +272,59 @@
         
     </div>
     
-    <h1 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h1><h2 id="数据挖掘的步骤"><a href="#数据挖掘的步骤" class="headerlink" title="数据挖掘的步骤"></a>数据挖掘的步骤</h2><table>
-<thead>
-<tr>
-<th>次序</th>
-<th>简要步骤</th>
-<th>具体步骤</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>收集</td>
-<td>信息收集</td>
-<td>根据确定的数据分析对象,抽象出在数据分析中所需要的特征信息,然后选择合适的信息收集方法, 将收集到的信息存入数据库。对于海量数据,选择一个合适的数据存储和管理的数据仓库是至关重要的。 </td>
-</tr>
-<tr>
-<td>2</td>
-<td>收集</td>
-<td>数据集成</td>
-<td>把不同来源、格式、特点性质的数据在逻辑上或物理上有机地集中,从而为企业提供全面的数据共享。</td>
-</tr>
-<tr>
-<td>3</td>
-<td>预处理</td>
-<td>数据规约</td>
-<td>数据规约技术可以用来得到数据集的规约表 示,它小得多,但仍然接近于保持原数据的完整性,并且规约后执行数据挖掘结果与规约前执行结果相同或几乎相同。</td>
-</tr>
-<tr>
-<td>4</td>
-<td>预处理</td>
-<td>数据清理</td>
-<td>在数据库中的数据有一些是不完整的 (有些感兴趣的属性缺少属性值)、含噪声的(包含错误的属性值),并且是不一致的(同样的信息不同的表示方式),因此需要进行数据清理,将完整、正确、一致的数据信息存入数据仓库中。</td>
-</tr>
-<tr>
-<td>5</td>
-<td>预处理</td>
-<td>数据变换</td>
-<td>通过平滑聚集、数据概化、规范化等 方式将数据转换成适用于数据挖掘的形式。对于有些实数型数据,通过概念分层和数据的离散化来转换数据也是重要的一步</td>
-</tr>
-<tr>
-<td>6</td>
-<td>挖掘</td>
-<td>挖掘过程</td>
-<td>根据数据仓库中的数据信息,选择合适的分析工具,应用统计方法、事例推理、决策树、规则推理、模糊集,甚至神经网络、遗传算法的方法处理信息,得出有用的分析信息。</td>
-</tr>
-<tr>
-<td>7</td>
-<td>挖掘</td>
-<td>模式评估</td>
-<td>从商业角度,由行业专家来验证数据挖掘结果的正确性。</td>
-</tr>
-<tr>
-<td>8</td>
-<td>挖掘</td>
-<td>知识表示</td>
-<td>将数据挖掘所得到的分析信息以可视化的方式呈现给用户,或作为新的知识存放在知识库中,供其他应用程序使用。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="十大数据挖掘算法"><a href="#十大数据挖掘算法" class="headerlink" title="十大数据挖掘算法"></a>十大数据挖掘算法</h2><table>
-<thead>
-<tr>
-<th>序号</th>
-<th>算法</th>
-<th>归类</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>C4.5</td>
-<td>分类</td>
-<td>机器学习算法中的一种分类决策树算法</td>
-</tr>
-<tr>
-<td>2</td>
-<td>kNN</td>
-<td>分类</td>
-<td>K最近邻(k-Nearest Neighbor)分类算法</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Naive Bayes</td>
-<td>分类</td>
-<td>朴素贝叶斯模型</td>
-</tr>
-<tr>
-<td>4</td>
-<td>CART</td>
-<td>分类</td>
-<td>分类与回归树</td>
-</tr>
-<tr>
-<td>5</td>
-<td>K-Means</td>
-<td>聚类</td>
-<td>聚类算法</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Apriori</td>
-<td>关联分析</td>
-<td>一种最有影响的挖掘布尔关联规则频繁项集的算法</td>
-</tr>
-<tr>
-<td>7</td>
-<td>AdaBoost</td>
-<td>袋装与推进</td>
-<td>一种迭代算法</td>
-</tr>
-<tr>
-<td>8</td>
-<td>PageRank</td>
-<td>链接挖掘</td>
-<td>Google算法的重要内容</td>
-</tr>
-<tr>
-<td>9</td>
-<td>SVM</td>
-<td>统计学习</td>
-<td>支持向量机</td>
-</tr>
-<tr>
-<td>0</td>
-<td>EM</td>
-<td>统计学习</td>
-<td>最大期望算法</td>
-</tr>
-</tbody>
-</table>
-<h2 id="基本探测指标"><a href="#基本探测指标" class="headerlink" title="基本探测指标"></a>基本探测指标</h2><table>
-<thead>
-<tr>
-<th>序号</th>
-<th>探测指标</th>
-<th>指标作用</th>
-<th>指标类型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>均值(mean)</td>
-<td>能够利用所有已知信息，但对异常值（极大、极小）敏感</td>
-<td>集中趋势指标</td>
-</tr>
-<tr>
-<td>2</td>
-<td>中位数(median)</td>
-<td>排序后居于中间位置的数值，有序尺度常用</td>
-<td>集中趋势指标</td>
-</tr>
-<tr>
-<td>3</td>
-<td>众数(mode)</td>
-<td>出现最频繁的数，代表分布中的高峰</td>
-<td>集中趋势指标</td>
-</tr>
-<tr>
-<td>4</td>
-<td>极差(range)</td>
-<td>最大最小值之差，直接受到异常值影响</td>
-<td>变异性指标</td>
-</tr>
-<tr>
-<td>5</td>
-<td>方差(variance)</td>
-<td>数据越分散，原理均值，方差越大</td>
-<td>变异性指标</td>
-</tr>
-<tr>
-<td>6</td>
-<td>标准差(standard deviation)</td>
-<td>与数据本身有相同的量纲</td>
-<td>变异性指标</td>
-</tr>
-<tr>
-<td>7</td>
-<td>偏度(skewness)</td>
-<td>刻画数据在均值两侧偏差趋势的差异性</td>
-<td>变异性指标</td>
-</tr>
-<tr>
-<td>8</td>
-<td>峰读(kurtosis)</td>
-<td>测量分布曲线相对平滑或突起的程度</td>
-<td>变异性指标</td>
-</tr>
-</tbody>
-</table>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p>1.<a href="https://gist.github.com/jyfeather/5883425#file-1-md" target="_blank" rel="noopener">Github——by jyfeather</a></p>
+    <h1 id="数据仓库和联机分析处理"><a href="#数据仓库和联机分析处理" class="headerlink" title="数据仓库和联机分析处理"></a>数据仓库和联机分析处理</h1><h3 id="一、Abstract"><a href="#一、Abstract" class="headerlink" title="一、Abstract"></a>一、Abstract</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>1.1 数据仓库的概念的关键特征<br>1.2 OLTP和OLAP的概念和主要区别</p>
+<h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>2.1 数据立方体的概念<br>2.2 数据仓库的数据模型(星型模式、雪花模式、事实星座模式)<br>2.3 概念分层的作用<br>2.4 典型的OLAP操作方法</p>
+<h4 id="3"><a href="#3" class="headerlink" title="3"></a>3</h4><p>3.1 数据仓库涉及的四种视图<br>3.2 数据仓库的设计过程和步骤<br>3.3 数据立方体的有效计算<br>3.4 如何使用位图索引和连接索引对OLAP进行索引<br>3.5 OLAP查询处理过程</p>
+<h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><p>4.1 三类数据仓库的应用<br>4.2 OLAM特别重要的原因</p>
+<hr>
+<h3 id="二、Content"><a href="#二、Content" class="headerlink" title="二、Content"></a>二、Content</h3><h4 id="1-1-数据仓库的概念的关键特征"><a href="#1-1-数据仓库的概念的关键特征" class="headerlink" title="1.1 数据仓库的概念的关键特征"></a>1.1 数据仓库的概念的关键特征</h4><ul>
+<li><p>四个关键词,面向主题的、集成的、时变的、非易失的,将数据仓库与其他数据存储系统(如关系数据系统、事务处理系统和文件系统)相区别.</p>
+<p>  (1) <strong>面主题的</strong>(Subject-oriented):数据仓库围绕一些主题，如顾客、供应商、产品和销售组织。数据仓库关注决策者的数据建模与分析，而不是集中于组织机构的日常操作和事务处理。因此，数据仓库排除对决策无用的数据，提供特定主题的简明视图。  </p>
+<p>  (2) <strong>集成的</strong>(Integrated):通常，构造数据仓库是将多个异种数据源，如关系数据库、一般文件和连机事务处理记录集成在一起。使用数据清理和数据集成技术，确保命名约定、编码结构和属性度量等指标的一致性。</p>
+<p>  (3) <strong>时变的</strong>(Time-variant):数据存储从历史的角度（例如过去5～10年）提供信息。数据仓库中的关键结构，隐式或显式地包含时间元素。</p>
+<p>  (4) <strong>非易失的</strong>(Nonvolatile):数据仓库的数据是有历史保存意义的，数据仓库的数据也只使用添加的方式（不用时间的数据用时间戳来区分），进入了数据仓库的数据一般情况下是不需要更新的，这样就保证了数据的稳定性。通常，它只需要三种数据访问：数据的初始化装入、数据的添加和数据查询访问。</p>
+</li>
+<li><p>概言之，数据仓库是一种语义上一致的数据存储，它充当决策支持数据模型的物理实现，并存放企业战略决策所需的信息。数据仓库通过将异种数据源中的数据集成在一起而构造，支持结构化的和专门的查询、分析报告和决策。</p>
+</li>
+</ul>
+<h4 id="1-2-OLTP和OLAP的概念和主要区别"><a href="#1-2-OLTP和OLAP的概念和主要区别" class="headerlink" title="1.2 OLTP和OLAP的概念和主要区别"></a>1.2 OLTP和OLAP的概念和主要区别</h4><ul>
+<li><p>联机操作数据库系统的主要任务是执行联机事务和查询处理，即联机事务处理（Online Transaction Processing，OLTP）。数据仓库系统在数据分析和决策方面为用户或知识工人提供服务，可用不同的格式组织和提供数据，满足不同用户的不同需求，即联机分析处理（Online Analytical Processing，OLAP）系统。OLTP和OLAP主要区别：</p>
+</li>
+<li><p>(1) 用户和系统的面向性：OLTP是面向顾客的，用于事务和查询处理；OLAP是面向市场的，用于数据分析。  </p>
+<p>  (2) 数据内容：OLTP系统管理当前数据，数据琐碎难用于决策；OLAP系统管理大量历史数据，提供汇总和聚集机制，并在不同的粒度层上存储管理信息，用于决策。</p>
+<p>  (3) 数据库设计：OLTP采用实体-联系（E-R）数据模型和面向应用的数据库设计；而OLAP系统通常采用星形或雪花模型和面向主题的数据库设计。</p>
+<p>  (4) 视图：OLTP系统主要关注企业或部门内部的当前数据，而不涉及历史数据或不同单位的数据；OLAP系统是跨越数据库模式，处理不同单位的信息，以及多个数据库集成的信息，数据量巨大，OLAP数据也存放在多个存储介质上。</p>
+<p>  (5) 访问模式：OLTP系统的访问主要由短的原子事务组成，需要并发控制和恢复机制；OLAP系统的大部分访问是读取操作（大部分数据仓库存放历史数据，而不是最新数据），并且是复杂的查询。</p>
+</li>
+<li><p>OLTP和OLAP的区别，包括数据库大小、操作频繁程度、性能度量等，如下表：</p>
+<p>  <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fsb4796ko7j31680oo10u.jpg" alt="pic" style="width:90%"> </p>
+</li>
+</ul>
+<h4 id="2-1-数据立方体的概念"><a href="#2-1-数据立方体的概念" class="headerlink" title="2.1 数据立方体的概念"></a>2.1 数据立方体的概念</h4><ul>
+<li>数据立方体时对多维数据存储的一种比喻,这种数据的实际物理存储可以不同于它的逻辑表示. 数据立方体时n维的,而不限于3-D.</li>
+</ul>
+<h4 id="2-2-数据仓库的数据模型-星型模式、雪花模式、事实星座"><a href="#2-2-数据仓库的数据模型-星型模式、雪花模式、事实星座" class="headerlink" title="2.2 数据仓库的数据模型(星型模式、雪花模式、事实星座)"></a>2.2 数据仓库的数据模型(星型模式、雪花模式、事实星座)</h4><h4 id="2-3-概念分层的作用"><a href="#2-3-概念分层的作用" class="headerlink" title="2.3 概念分层的作用"></a>2.3 概念分层的作用</h4><h4 id="2-4-典型的OLAP操作方法"><a href="#2-4-典型的OLAP操作方法" class="headerlink" title="2.4 典型的OLAP操作方法"></a>2.4 典型的OLAP操作方法</h4><h4 id="3-1-数据仓库涉及的四种视图"><a href="#3-1-数据仓库涉及的四种视图" class="headerlink" title="3.1 数据仓库涉及的四种视图"></a>3.1 数据仓库涉及的四种视图</h4><h4 id="3-2-数据仓库的设计过程和步骤"><a href="#3-2-数据仓库的设计过程和步骤" class="headerlink" title="3.2 数据仓库的设计过程和步骤"></a>3.2 数据仓库的设计过程和步骤</h4><h4 id="3-3-数据立方体的有效计算"><a href="#3-3-数据立方体的有效计算" class="headerlink" title="3.3 数据立方体的有效计算"></a>3.3 数据立方体的有效计算</h4><h4 id="3-4-如何使用位图索引和连接索引对OLAP进行索引"><a href="#3-4-如何使用位图索引和连接索引对OLAP进行索引" class="headerlink" title="3.4 如何使用位图索引和连接索引对OLAP进行索引"></a>3.4 如何使用位图索引和连接索引对OLAP进行索引</h4><h4 id="3-5-OLAP查询处理过程"><a href="#3-5-OLAP查询处理过程" class="headerlink" title="3.5 OLAP查询处理过程"></a>3.5 OLAP查询处理过程</h4><h4 id="4-1-三类数据仓库的应用"><a href="#4-1-三类数据仓库的应用" class="headerlink" title="4.1 三类数据仓库的应用"></a>4.1 三类数据仓库的应用</h4><h4 id="4-2-OLAM特别重要的原因"><a href="#4-2-OLAM特别重要的原因" class="headerlink" title="4.2 OLAM特别重要的原因"></a>4.2 OLAM特别重要的原因</h4><h3 id="三、Reference"><a href="#三、Reference" class="headerlink" title="三、Reference"></a>三、Reference</h3><h3 id="四、其他资料"><a href="#四、其他资料" class="headerlink" title="四、其他资料"></a>四、其他资料</h3><p><a rel="noopener" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><br></a><br>本<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>采用<a rel="noopener" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。<br>        <img alt="知识共享许可协议" style="border-width:0；width:5%;max-width:60px;max-height:60px" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></p>
 
 </article>
-<ol class="animated rollIn hannah-toc"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#资料"><span class="animated rollIn hannah-toc-text">资料</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#数据挖掘的步骤"><span class="animated rollIn hannah-toc-text">数据挖掘的步骤</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#十大数据挖掘算法"><span class="animated rollIn hannah-toc-text">十大数据挖掘算法</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#基本探测指标"><span class="animated rollIn hannah-toc-text">基本探测指标</span></a></li></ol></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#Reference"><span class="animated rollIn hannah-toc-text">Reference</span></a></li></ol>
+<ol class="animated rollIn hannah-toc"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#数据仓库和联机分析处理"><span class="animated rollIn hannah-toc-text">数据仓库和联机分析处理</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#一、Abstract"><span class="animated rollIn hannah-toc-text">一、Abstract</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#1"><span class="animated rollIn hannah-toc-text">1</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#2"><span class="animated rollIn hannah-toc-text">2</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3"><span class="animated rollIn hannah-toc-text">3</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#4"><span class="animated rollIn hannah-toc-text">4</span></a></li></ol></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#二、Content"><span class="animated rollIn hannah-toc-text">二、Content</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#1-1-数据仓库的概念的关键特征"><span class="animated rollIn hannah-toc-text">1.1 数据仓库的概念的关键特征</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#1-2-OLTP和OLAP的概念和主要区别"><span class="animated rollIn hannah-toc-text">1.2 OLTP和OLAP的概念和主要区别</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#2-1-数据立方体的概念"><span class="animated rollIn hannah-toc-text">2.1 数据立方体的概念</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#2-2-数据仓库的数据模型-星型模式、雪花模式、事实星座"><span class="animated rollIn hannah-toc-text">2.2 数据仓库的数据模型(星型模式、雪花模式、事实星座)</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#2-3-概念分层的作用"><span class="animated rollIn hannah-toc-text">2.3 概念分层的作用</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#2-4-典型的OLAP操作方法"><span class="animated rollIn hannah-toc-text">2.4 典型的OLAP操作方法</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3-1-数据仓库涉及的四种视图"><span class="animated rollIn hannah-toc-text">3.1 数据仓库涉及的四种视图</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3-2-数据仓库的设计过程和步骤"><span class="animated rollIn hannah-toc-text">3.2 数据仓库的设计过程和步骤</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3-3-数据立方体的有效计算"><span class="animated rollIn hannah-toc-text">3.3 数据立方体的有效计算</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3-4-如何使用位图索引和连接索引对OLAP进行索引"><span class="animated rollIn hannah-toc-text">3.4 如何使用位图索引和连接索引对OLAP进行索引</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#3-5-OLAP查询处理过程"><span class="animated rollIn hannah-toc-text">3.5 OLAP查询处理过程</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#4-1-三类数据仓库的应用"><span class="animated rollIn hannah-toc-text">4.1 三类数据仓库的应用</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-4"><a class="animated rollIn hannah-toc-link" href="#4-2-OLAM特别重要的原因"><span class="animated rollIn hannah-toc-text">4.2 OLAM特别重要的原因</span></a></li></ol></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#三、Reference"><span class="animated rollIn hannah-toc-text">三、Reference</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#四、其他资料"><span class="animated rollIn hannah-toc-text">四、其他资料</span></a></li></ol></li></ol></li></ol>
 <div class="animated bounceInDown paginations">
     <div class="col-md-8 col-md-push-2 col-xs-12">
         <nav>
             
-            <a href="/2018/06/11/stimulation/" class="prev col-md-2 col-xs-4 text-left">&larr; Prev</a>
-            
-            <span class="page-content col-md-8  col-xs-4 text-center">
+            <span class="page-content col-md-8 col-md-offset-2 col-xs-offset-4 col-xs-4 text-center">
                 
             </span>
             
-            <a href="/2018/06/07/book/" class="next col-md-2 col-xs-4 text-right">Next &rarr;</a>
+            <a href="/2018/06/11/stimulation/" class="next col-md-2 col-xs-4 text-right">Next &rarr;</a>
             
         </nav>
         <div>
             <div class="col-md-6 col-xs-6 text-left">
                 
-                差距?了解一下!
-                
             </div>
             <div class="col-md-6 col-xs-6 text-right">
                 
-                book
+                差距?了解一下!
                 
             </div>
         </div>
