@@ -230,7 +230,17 @@ a:hover {
 .intro > .eyebrow {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 9px;
+}
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero-status,
+.hero-affiliation {
+  white-space: nowrap;
 }
 .status-dot,
 .tiny-dot {
@@ -781,10 +791,7 @@ h2 {
   padding-top: 70px;
   padding-bottom: 70px;
 }
-.background-grid {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  gap: 55px;
+.background-content {
   margin-top: 36px;
 }
 .column-title {
@@ -802,9 +809,9 @@ h2 {
 }
 .experience-list li {
   display: grid;
-  grid-template-columns: 154px 1fr;
-  gap: 19px;
-  margin-bottom: 22px;
+  grid-template-columns: 166px minmax(0, 1fr);
+  gap: 28px;
+  margin-bottom: 26px;
 }
 .experience-list li:last-child {
   margin-bottom: 0;
@@ -816,27 +823,13 @@ h2 {
   padding-top: 2px;
   font-variant-numeric: tabular-nums;
 }
-.current-label {
-  display: block;
-  width: fit-content;
-  color: #646c5c;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  margin-top: 5px;
+.experience-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  align-items: baseline;
+  column-gap: 28px;
 }
-.current-label:before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  background: #80916e;
-  border-radius: 50%;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-.experience-list h4,
-.education-item h4 {
+.experience-list h4 {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.5;
@@ -849,56 +842,43 @@ h2 {
 .experience-role {
   font-size: 13px;
   color: #666e5d;
-  margin-top: 3px;
-}
-.skywork-experience h4 a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
 }
 .experience-description {
+  grid-column: 1 / -1;
   font-size: 13px;
   color: #646c5c;
   line-height: 1.8;
   margin-top: 6px;
 }
-.education-column {
-  border-left: 1px solid var(--line);
-  padding-left: 36px;
-}
-.education-item + .education-item {
-  margin-top: 24px;
-}
-.education-date {
-  font-size: 11px;
-  color: #646c5c;
-  margin-bottom: 6px;
-}
-.education-item > p:last-child {
-  font-size: 13px;
-  color: #646c5c;
-  margin-top: 6px;
-}
-.patent-note {
+.education-details {
   border-top: 1px solid var(--line);
-  padding-top: 24px;
-  margin-top: 30px;
+  padding-top: 15px;
+  margin-top: 26px;
 }
-.patent-note .eyebrow {
-  font-size: 11px;
-  letter-spacing: 1.05px;
-  color: var(--accent);
+.education-details summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  min-height: 36px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  color: var(--muted);
 }
-.patent-note h4 {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.65;
-  margin: 10px 0 7px;
+.education-details summary::-webkit-details-marker {
+  display: none;
 }
-.patent-note > p:last-child {
-  font-size: 11px;
-  color: #646c5c;
+.education-details[open] .details-plus {
+  transform: rotate(45deg);
+}
+.education-history {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 28px;
+  padding-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
   line-height: 1.9;
 }
 .contact-section {
@@ -1012,15 +992,9 @@ h2 {
   .paper-content h3 {
     font-size: 15px;
   }
-  .background-grid {
-    gap: 40px;
-  }
   .experience-list li {
     grid-template-columns: 145px 1fr;
     gap: 12px;
-  }
-  .education-column {
-    padding-left: 27px;
   }
   .industry-grid {
     gap: 24px;
@@ -1129,24 +1103,14 @@ h2 {
   .industry-project .industry-footnote {
     font-size: 11px;
   }
-  .background-grid {
-    gap: 27px;
-    grid-template-columns: 1.7fr 1fr;
+  .experience-entry {
+    display: block;
   }
-  .experience-list li {
-    grid-template-columns: 1fr;
-    gap: 4px;
-    margin-bottom: 23px;
-  }
-  .current-label {
-    display: inline-block;
-    margin: 0 0 0 10px;
+  .experience-role {
+    margin-top: 3px;
   }
   .column-title {
     font-size: 11px;
-  }
-  .experience-description {
-    max-width: 310px;
   }
   .contact-email {
     font-size: 15px;
@@ -1218,9 +1182,17 @@ h2 {
     letter-spacing: -1.8px;
   }
   .intro > .eyebrow {
+    display: block;
     font-size: 11px;
-    gap: 7px;
     letter-spacing: 1.25px;
+  }
+  .intro .eyebrow-divider {
+    display: none;
+  }
+  .hero-affiliation {
+    display: block;
+    margin-top: 4px;
+    margin-left: 15px;
   }
   .chinese-name {
     font-size: 17px;
@@ -1458,9 +1430,7 @@ h2 {
     font-size: 13px;
     line-height: 1.7;
   }
-  .background-grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
+  .background-content {
     margin-top: 26px;
   }
   .column-title {
@@ -1468,20 +1438,14 @@ h2 {
     margin-bottom: 22px;
   }
   .experience-list li {
-    grid-template-columns: 140px 1fr;
-    gap: 11px;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 12px;
     margin-bottom: 26px;
   }
   .experience-date {
     font-size: 11px;
   }
-  .current-label {
-    display: block;
-    margin: 5px 0 0;
-    font-size: 11px;
-  }
-  .experience-list h4,
-  .education-item h4 {
+  .experience-list h4 {
     font-size: 15px;
   }
   .experience-role {
@@ -1490,27 +1454,8 @@ h2 {
   .experience-description {
     font-size: 13px;
   }
-  .education-column {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    padding-left: 0;
-    padding-top: 29px;
-  }
-  .education-item + .education-item {
-    margin-top: 22px;
-  }
-  .education-item h4 br {
-    display: none;
-  }
-  .education-date {
-    font-size: 11px;
-  }
-  .patent-note {
-    margin-top: 26px;
-    padding-top: 23px;
-  }
-  .patent-note h4 {
-    font-size: 13px;
+  .education-history {
+    grid-template-columns: 1fr;
   }
   .contact-section {
     display: block;
@@ -1636,9 +1581,6 @@ h2 {
   }
   .paper-links {
     font-size: 8pt;
-  }
-  .background-grid {
-    gap: 25px;
   }
   .industry-grid {
     gap: 20px;

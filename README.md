@@ -32,15 +32,15 @@ The original 2018 blog landing page is preserved, byte for byte, in `blog/index.
 
 The design is original. Research-first information structure was informed by the personal sites of [Saining Xie](https://www.sainingxie.com/), [Jiajun Wu](https://jiajunwu.com/), and [Shuran Song](https://shurans.github.io/). No code or portraits were copied from these sites.
 
-Research thumbnails come from the author's public project pages and papers; they are resized and encoded as WebP for the homepage. Ownership of the research figures remains with their original authors.
+Research thumbnails come from the author's public project pages, papers, and supplied figures; they are resized and encoded as WebP for the homepage. Ownership of the research figures remains with their original authors.
 
-| Thumbnail     | Original source                                                  |
-| ------------- | ---------------------------------------------------------------- |
-| LTE / ST-Mem  | https://sealical.github.io/st-mem/assets/st_mem_teaser.png       |
-| PhysLayer     | https://arxiv.org/html/2604.23574v1/teaser_image_v4.png          |
-| CineAGI       | https://arxiv.org/html/2604.23579v1/qualitative.png              |
-| PhysCodeBench | https://arxiv.org/html/2604.23580v1/data_samples_v2.png          |
-| Anywhere      | https://anywheremultiagent.github.io/static/documents/teaser.png |
-| EgoMonth      | https://arxiv.org/html/2608.13113v1/teaser.png                   |
+| Thumbnail     | Original source                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| LTE / ST-Mem  | https://sealical.github.io/st-mem/assets/st_mem_teaser.png                                                                           |
+| PhysLayer     | https://arxiv.org/html/2604.23574v1/teaser_image_v4.png                                                                              |
+| CineAGI       | https://arxiv.org/html/2604.23579v1/qualitative.png                                                                                  |
+| PhysCodeBench | Author-provided updated overview (not yet on arXiv); full-resolution original in `personal-assets/images/physcodebench-overview.png` |
+| Anywhere      | https://anywheremultiagent.github.io/static/documents/teaser.png                                                                     |
+| EgoMonth      | https://arxiv.org/html/2608.13113v1/teaser.png                                                                                       |
 
 The social sharing card and favicon use the site's own typography and geometric wordmark.
