@@ -1,660 +1,884 @@
+<!doctype html>
 
-
-<!DOCTYPE html>
-<html lang="Chinese">
-<!--begin head-->
-<head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<!--begin title-->
-
-<title>
-    
-    Since 2018-06-01 |
-    
-    Sealical&#39;s Blog</title>
-<!--end title-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--begin mete-->
-
-<meta name="description" content="Recording and Studying"/>
-
-<meta name="author" content="Xie Tianyidan"/>
-
-<!--end mete-->
-<!--begin keywords-->
-<meta name="keywords" content="OTHER,Other,考研"/>
-<!--end keywords-->
-<!--begin rss-->
-
-<link rel="alternate" href="/atom.xml" title="Sealical&#39;s Blog" type="application/atom+xml">
-
-<!--end rss-->
-<!--begin favicon-->
-
-<link rel="icon" href="/favicon.ico">
-
-<!--end favicon-->
-<!--begin style-->
-
-<!-- stylesheets list from config.yml -->
-
-<link rel="stylesheet" href="/css/hannah.css">
-
-
-<!--end style--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-</head>
-<!--end head-->
-<!--begin body-->
-<body class="container-fluid">
-
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><!--begin menu-->
-<div class="hannah-menu">
-    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
-    <div class="menu-outer container-fluid hide animated" id="div_menu">
-        <div class="row" style="margin-bottom: 5px;">
-            
-            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
-                
-                <a target="_blank" href="https://github.com/Sealical" title="GitHub"><i class="fh fh-github"></i></a>
-                
-                <style>
-                    .left-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    .left-social * {
-                        color: #f1ce8e;
-                    }
-
-                    @media (max-width: 767px) {
-                        .left-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-                </style>
-            </div>
-            <!--begin handImg-->
-            <div class="col-md-2 col-xs-4 text-center">
-                
-                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
-                
-            </div>
-            <!--end handImg-->
-            <div class="col-md-3 col-xs-4 text-center right-social">
-                
-                <a target="_blank" href="https://zhihu.com/people/sealical" title="Outlook"><i class="fh fh-outlook"></i></a>
-                
-                <style>
-                    .right-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    @media (max-width: 767px) {
-                        .right-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-
-                    .right-social * {
-                        color: #f1ce8e;
-                    }
-                </style>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
-                <dl class="menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
-                    </dt>
-                    <dd class="menu-content-content">
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/" class="btn btn-block">
-                                
-                                <i class="fh fh-ravelry"></i>
-                                Home
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/categories" class="btn btn-block">
-                                
-                                <i class="fh fh-cubes"></i>
-                                Category
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/tags" class="btn btn-block">
-                                
-                                <i class="fh fh-tags"></i>
-                                Tag
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/archives" class="btn btn-block">
-                                
-                                <i class="fh fh-archive"></i>
-                                Archives
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/about" class="btn btn-block">
-                                
-                                <i class="fh fh-about"></i>
-                                About
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/doc" class="btn btn-block">
-                                
-                                <i class="fh fh-document"></i>
-                                Doc
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/plug" class="btn btn-block">
-                                
-                                <i class="fh fh-plug"></i>
-                                Plug
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/sitemap" class="btn btn-block">
-                                
-                                <i class="fh fh-sitemap"></i>
-                                SiteMap
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/atom.xml" class="btn btn-block">
-                                <i class="fh fh-rss" aria-hidden="true"></i> RSS
-                            </a>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        <ul class="menu-cate-list"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/数据挖掘/"><i class="fh fh-cube" aria-hidden="true"></i> 数据挖掘</a><span class="menu-cate-list-count">4</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/杂谈/"><i class="fh fh-cube" aria-hidden="true"></i> 杂谈</a><span class="menu-cate-list-count">4</span><ul class="menu-cate-list-child"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/杂谈/关于博客/"><i class="fh fh-cube" aria-hidden="true"></i> 关于博客</a><span class="menu-cate-list-count">2</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/杂谈/关于我/"><i class="fh fh-cube" aria-hidden="true"></i> 关于我</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/杂谈/关于目标/"><i class="fh fh-cube" aria-hidden="true"></i> 关于目标</a><span class="menu-cate-list-count">1</span></li></ul></li></ul>
-                    </dd>
-                </dl>
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        <ul class="menu-tag-list"><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/OTHER/"><i class="fh fh-tag" aria-hidden="true"></i> OTHER</a><span class="menu-tag-list-count">2</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/Other/"><i class="fh fh-tag" aria-hidden="true"></i> Other</a><span class="menu-tag-list-count">2</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/考研/"><i class="fh fh-tag" aria-hidden="true"></i> 考研</a><span class="menu-tag-list-count">4</span></li></ul>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end menu-->
-
-<div class="row hannah-body">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <!--begin breadcrumb-->
-        <div class="bread-crumb">
-    <ul class="bread-crumb-menu animated rubberBand">
-        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
-        
-    </ul>
-    <div class="bread-crumb-search">
-        <div class="search">
-    <i class="fh fh-search icon-search"></i>
-    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
-           class="input-search animated fadeInRight"/>
-    <div class="search-result animated fadeInRight">
-        <a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/14/data-mining3/">《数据挖掘》第三部分：数据仓库和联机分析处理</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/11/stimulation/">差距?了解一下!</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/10/material/">material</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/07/book/">book</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/06/data-mining2/">《数据挖掘》第二部分：数据预处理</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/05/Sealical-First-Blog/">《数据挖掘》第一部分：数据挖掘概要</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/03/hello-world/">Hello World</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/03/statement/">对于blog的小要求</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2018/06/03/我的博客创建过程/">我的博客的创建</a>
-    </div>
-</div>
-    </div>
-</div>
-        <!--end breadcrumb-->
-        
-<div class="recent-posts">
-    
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/14/data-mining3/">
-                《数据挖掘》第三部分：数据仓库和联机分析处理
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-13T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-14
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/数据挖掘/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;数据挖掘
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/考研/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;考研
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/14/data-mining3/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInRightBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/11/stimulation/">
-                差距?了解一下!
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-10T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-11
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/杂谈/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;杂谈
-                    </a>
-            
-            <a class="label label-primary tags" href="/categories/杂谈/关于目标/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;关于目标
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/OTHER/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;OTHER
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/11/stimulation/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/10/material/">
-                material
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-09T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-10
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/数据挖掘/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;数据挖掘
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/考研/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;考研
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/10/material/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInRightBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/07/book/">
-                book
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-07T12:46:33.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-07
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/杂谈/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;杂谈
-                    </a>
-            
-            <a class="label label-primary tags" href="/categories/杂谈/关于我/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;关于我
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/OTHER/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;OTHER
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/07/book/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/06/data-mining2/">
-                《数据挖掘》第二部分：数据预处理
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-05T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-06
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/数据挖掘/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;数据挖掘
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/考研/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;考研
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/06/data-mining2/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInRightBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/05/Sealical-First-Blog/">
-                《数据挖掘》第一部分：数据挖掘概要
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-04T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-05
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/数据挖掘/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;数据挖掘
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/考研/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;考研
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/05/Sealical-First-Blog/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/03/hello-world/">
-                Hello World
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-03T00:35:49.471Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-03
-        </time>
-        
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <a class="look" href="/2018/06/03/hello-world/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInRightBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/03/statement/">
-                对于blog的小要求
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-02T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-03
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/杂谈/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;杂谈
-                    </a>
-            
-            <a class="label label-primary tags" href="/categories/杂谈/关于博客/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;关于博客
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/Other/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;Other
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/03/statement/">Look >></a>
-    </div>
-</div>
-    
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/06/03/我的博客创建过程/">
-                我的博客的创建
-            </a>
-        </h3>
-        
-        <time datetime="2018-06-02T16:00:00.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-06-03
-        </time>
-        
-        
-        <span class="item">
-                  <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/杂谈/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;杂谈
-                    </a>
-            
-            <a class="label label-primary tags" href="/categories/杂谈/关于博客/">
-                       <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;关于博客
-                    </a>
-            
-        </span>
-        
-    </div>
-    
-    <div class="item-footer">
-        
-        <span class="item">
-                    <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/Other/">
-                        <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;Other
-                    </a>
-            
-        </span>
-        
-        <a class="look" href="/2018/06/03/我的博客创建过程/">Look >></a>
-    </div>
-</div>
-    
-</div>
-
-
-<div class="animated bounceInDown paginations">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <nav>
-            
-            <span class="page-content col-md-8 col-md-offset-2 col-xs-offset-4 col-xs-4 text-center">
-                
-                Page 1 of 1
-                
-            </span>
-            
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#faf9f6" name="theme-color" />
+    <meta content="light" name="color-scheme" />
+    <title>Tianyidan Xie · Multimodal AI, Agents &amp; Spatial Memory</title>
+    <meta
+      content="Tianyidan Xie (谢天异丹), AI researcher working on multimodal generation, intelligent agents, world models, and long-horizon spatial memory. Research at Nanjing University; previously at Kunlun Tech / Skywork AI."
+      name="description"
+    />
+    <link href="https://sealical.github.io/" rel="canonical" />
+    <meta content="profile" property="og:type" />
+    <meta content="Tianyidan Xie · AI Researcher" property="og:title" />
+    <meta
+      content="Multimodal generation, intelligent agents, and spatial memory. Selected research and open-source contributions."
+      property="og:description"
+    />
+    <meta content="https://sealical.github.io/" property="og:url" />
+    <meta
+      content="https://sealical.github.io/personal-assets/images/social-preview.png"
+      property="og:image"
+    />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta
+      content="Tianyidan Xie — Multimodal generation, intelligent agents, and spatial memory"
+      property="og:image:alt"
+    />
+    <meta content="Tianyidan" property="profile:first_name" />
+    <meta content="Xie" property="profile:last_name" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <link href="personal-assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link
+      as="font"
+      crossorigin=""
+      href="personal-assets/fonts/instrument-serif-400.ttf"
+      rel="preload"
+      type="font/ttf"
+    />
+    <link href="personal-assets/site.css" rel="stylesheet" />
+    <script defer="" src="personal-assets/site.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://sealical.github.io/#person",
+        "name": "Tianyidan Xie",
+        "alternateName": ["谢天异丹", "Sealical"],
+        "givenName": "Tianyidan",
+        "familyName": "Xie",
+        "url": "https://sealical.github.io/",
+        "email": "mailto:sealical@outlook.com",
+        "jobTitle": "Research Assistant",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Nanjing University"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Southwestern University of Finance and Economics"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Southwest University of Science and Technology"
+          }
+        ],
+        "knowsAbout": [
+          "Multimodal AI",
+          "Visual generation",
+          "Multi-agent systems",
+          "Spatial memory",
+          "World models"
+        ],
+        "sameAs": [
+          "https://github.com/Sealical",
+          "https://scholar.google.com/citations?user=mt_9vl8AAAAJ&hl=en"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a
+          aria-label="Tianyidan Xie, back to top"
+          class="wordmark"
+          href="#about"
+          ><span aria-hidden="true" class="brand-mark"
+            ><i></i><i></i><i></i><i></i></span
+          >Tianyidan Xie<span class="wordmark-dot">.</span></a
+        >
+        <button
+          aria-controls="site-nav"
+          aria-expanded="false"
+          class="menu-toggle"
+          hidden=""
+          type="button"
+        >
+          Menu <span aria-hidden="true">+</span>
+        </button>
+        <nav aria-label="Main navigation" class="site-nav" id="site-nav">
+          <a aria-current="location" href="#about">About</a
+          ><a href="#research">Research</a><a href="#industry">Industry</a
+          ><a href="#experience">Experience</a
+          ><a class="nav-contact" href="mailto:sealical@outlook.com"
+            >Get in touch <span aria-hidden="true">↗</span></a
+          >
         </nav>
-        <div>
-            <div class="col-md-6 col-xs-6 text-left">
-                
-            </div>
-            <div class="col-md-6 col-xs-6 text-right">
-                
-            </div>
+      </div>
+    </header>
+    <main id="main">
+      <section aria-labelledby="name" class="hero container" id="about">
+        <div class="intro">
+          <p class="eyebrow">
+            <span aria-hidden="true" class="status-dot"></span> AI researcher
+            <span class="eyebrow-divider">/</span> Nanjing University
+          </p>
+          <h1 id="name">Tianyidan Xie<span class="name-period">.</span></h1>
+          <p class="chinese-name" lang="zh-CN">
+            谢天异丹 <span aria-hidden="true">/</span>
+            <span lang="en">Sealical</span>
+          </p>
+          <p class="intro-statement">
+            Multimodal AI that can<br class="desktop-break" />
+            <em>generate, reason, and remember.</em>
+          </p>
+          <div class="bio">
+            <p>
+              I'm a research assistant at
+              <a
+                href="https://www.nju.edu.cn/en/"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Nanjing University</a
+              >, studying multimodal generation, agents, and spatial memory.
+            </p>
+            <p>
+              Previously at
+              <a class="text-strong" href="#industry"
+                >Skywork AI / Kunlun Tech</a
+              >, I contributed to <strong>UniPic, R1V, and Matrix-Game</strong>.
+            </p>
+          </div>
+          <div aria-label="Profile and contact links" class="profile-links">
+            <a
+              class="profile-link primary-link"
+              href="mailto:sealical@outlook.com"
+              ><svg
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                viewbox="0 0 20 20"
+              >
+                <rect height="12" rx="2" width="16" x="2" y="4"></rect>
+                <path d="m3 5 7 6 7-6"></path></svg
+              >Email</a
+            >
+            <a
+              class="profile-link"
+              href="https://scholar.google.com/citations?user=mt_9vl8AAAAJ&amp;hl=en"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Google Scholar <span aria-hidden="true">↗</span></a
+            >
+            <a
+              class="profile-link"
+              href="https://github.com/Sealical"
+              rel="noopener noreferrer"
+              target="_blank"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-    </div>
-</div>
-        <!--begin comments-->
-        
+        <aside aria-label="Research interests" class="research-note">
+          <div class="note-heading">
+            <span class="eyebrow">A research thread</span
+            ><span aria-hidden="true" class="note-star">✳</span>
+          </div>
+          <div class="research-thread">
+            <a data-topic="generation" href="#research"
+              ><span class="thread-number">01</span
+              ><span
+                >Generate<span class="thread-detail"
+                  >Images, videos &amp; worlds</span
+                ></span
+              ><span aria-hidden="true" class="thread-arrow">↗</span></a
+            >
+            <a data-topic="agents" href="#research"
+              ><span class="thread-number">02</span
+              ><span
+                >Reason<span class="thread-detail"
+                  >Multimodal agents &amp; physics</span
+                ></span
+              ><span aria-hidden="true" class="thread-arrow">↗</span></a
+            >
+            <a data-topic="memory" href="#research"
+              ><span class="thread-number">03</span
+              ><span class="thread-last"
+                >Remember<span class="thread-detail"
+                  >Spatial memory over time</span
+                ></span
+              ><span aria-hidden="true" class="thread-arrow">↗</span></a
+            >
+          </div>
+          <div class="note-footer">
+            <span aria-hidden="true" class="tiny-dot"></span> From visual
+            creation to embodied intelligence.
+          </div>
+        </aside>
+      </section>
+      <div class="latest-wrap container">
+        <a
+          class="latest-update"
+          href="https://sealical.github.io/st-mem/"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><span class="update-label"
+            ><span aria-hidden="true" class="tiny-dot"></span> Latest · Sep
+            2026</span
+          ><span
+            ><strong>LTE / ST-Mem</strong> — a queryable memory of an object's
+            journey.</span
+          ><span class="update-cta"
+            >Explore the project <span aria-hidden="true">↗</span></span
+          ></a
+        >
+      </div>
+      <section
+        aria-labelledby="research-title"
+        class="section container"
+        id="research"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-number">01 / Selected work</p>
+            <h2 id="research-title">
+              Research<span class="heading-period">.</span>
+            </h2>
+          </div>
+          <a
+            class="text-link section-link"
+            href="https://scholar.google.com/citations?user=mt_9vl8AAAAJ&amp;hl=en"
+            rel="noopener noreferrer"
+            target="_blank"
+            >All publications on Scholar <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="research-toolbar">
+          <p class="section-intro">
+            From creating visual worlds to remembering the real one.
+          </p>
+          <div
+            aria-label="Filter research by topic"
+            class="filters"
+            hidden=""
+            role="group"
+          >
+            <button aria-pressed="true" data-filter="all" type="button">
+              All work</button
+            ><button aria-pressed="false" data-filter="memory" type="button">
+              Memory</button
+            ><button
+              aria-pressed="false"
+              data-filter="generation"
+              type="button"
+            >
+              Generation</button
+            ><button aria-pressed="false" data-filter="agents" type="button">
+              Agents &amp; physics
+            </button>
+          </div>
+        </div>
+        <p
+          aria-atomic="true"
+          aria-live="polite"
+          class="sr-only"
+          id="filter-status"
+        ></p>
+        <div class="publications" id="publications">
+          <article
+            aria-labelledby="paper-lte"
+            class="publication"
+            data-topics="memory agents"
+          >
+            <a
+              aria-label="Explore lte"
+              class="paper-image"
+              href="https://sealical.github.io/st-mem/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="LTE connects linguistic, spatial, and visual evidence into object trajectories across a home."
+                height="675"
+                loading="lazy"
+                src="personal-assets/images/lte.webp"
+                width="1210"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue preprint">Preprint · Under review</span
+                ><span class="paper-year">2026</span
+                ><span class="paper-highlight">Latest work</span>
+              </div>
+              <h3 id="paper-lte">
+                <a
+                  href="https://arxiv.org/abs/2609.04802"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Linguistic Trajectory Encoding for Efficient Long-Horizon
+                  Spatial Memory in Embodied Agents</a
+                >
+              </h3>
+              <p class="paper-authors">
+                <strong>Tianyidan Xie</strong> et al.
+                <span class="author-role">First author</span>
+              </p>
+              <p class="paper-summary">
+                Object-centric memory that connects language, 3D space, and
+                visual evidence for retrieval across hours of experience.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="lte paper"
+                  href="https://arxiv.org/abs/2609.04802"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="lte project"
+                  href="https://sealical.github.io/st-mem/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Project <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="lte benchmark"
+                  href="https://sealical.github.io/st-mem/benchmark/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Benchmark <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword">Spatial memory</span>
+              </div>
+            </div>
+          </article>
+          <article
+            aria-labelledby="paper-physcodebench"
+            class="publication"
+            data-topics="agents"
+          >
+            <a
+              aria-label="Explore physcodebench"
+              class="paper-image"
+              href="https://arxiv.org/abs/2604.23580"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="PhysCodeBench evaluates physics simulation across mechanics, fluid dynamics, and soft-body physics."
+                height="458"
+                loading="lazy"
+                src="personal-assets/images/physcodebench.webp"
+                width="1914"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue preprint">Preprint · Under review</span
+                ><span class="paper-year">2026</span>
+              </div>
+              <h3 id="paper-physcodebench">
+                <a
+                  href="https://arxiv.org/abs/2604.23580"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation
+                  of 3D Scenes via Self-Corrective Multi-Agent Refinement</a
+                >
+              </h3>
+              <p class="paper-authors">
+                <strong>Tianyidan Xie</strong> et al.
+                <span class="author-role">First author</span>
+              </p>
+              <p class="paper-summary">
+                A 700-sample physics simulation benchmark and a self-correcting,
+                three-agent framework for executable, physically grounded code.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="physcodebench paper"
+                  href="https://arxiv.org/abs/2604.23580"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword">Agents for simulation</span>
+              </div>
+            </div>
+          </article>
+          <article
+            aria-labelledby="paper-physlayer"
+            class="publication"
+            data-topics="generation agents"
+          >
+            <a
+              aria-label="Explore physlayer"
+              class="paper-image"
+              href="https://arxiv.org/abs/2604.23574"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="PhysLayer animates falling stones, a bouncing ball, a moving car, and a falling vase with depth-aware physics."
+                height="2578"
+                loading="lazy"
+                src="personal-assets/images/physlayer.webp"
+                width="3757"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue">ICME 2026</span
+                ><span class="paper-year">2026</span>
+              </div>
+              <h3 id="paper-physlayer">
+                <a
+                  href="https://arxiv.org/abs/2604.23574"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >PhysLayer: Language-Guided Layered Animation with Depth-Aware
+                  Physics</a
+                >
+              </h3>
+              <p class="paper-authors">
+                <strong>Tianyidan Xie</strong> et al.
+                <span class="author-role">First author</span>
+              </p>
+              <p class="paper-summary">
+                Bringing still images to life through language-guided,
+                depth-aware physical simulation.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="physlayer paper"
+                  href="https://arxiv.org/abs/2604.23574"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword">Physics-aware generation</span>
+              </div>
+            </div>
+          </article>
+          <article
+            aria-labelledby="paper-cineagi"
+            class="publication"
+            data-topics="generation agents"
+          >
+            <a
+              aria-label="Explore cineagi"
+              class="paper-image"
+              href="https://arxiv.org/abs/2604.23579"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="CineAGI generates movie scenes with consistent characters and coordinated audiovisual narratives."
+                height="1250"
+                loading="lazy"
+                src="personal-assets/images/cineagi.webp"
+                width="2048"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue">ICME 2026</span
+                ><span class="paper-year">2026</span>
+              </div>
+              <h3 id="paper-cineagi">
+                <a
+                  href="https://arxiv.org/abs/2604.23579"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >CineAGI: Character-Consistent Movie Creation through
+                  LLM-Orchestrated Multi-Modal Generation and Cross-Scene
+                  Integration</a
+                >
+              </h3>
+              <p class="paper-authors">
+                <strong>Tianyidan Xie</strong> et al.
+                <span class="author-role">First author</span>
+              </p>
+              <p class="paper-summary">
+                Multi-agent orchestration for coherent movie creation, with
+                consistent characters and synchronized audio and video.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="cineagi paper"
+                  href="https://arxiv.org/abs/2604.23579"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword">Multi-agent creation</span>
+              </div>
+            </div>
+          </article>
 
-        <!--end comments-->
-    </div>
-</div>
-
-<!--begin footer-->
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-<footer id="footer" class="footer animated fadeInUp hide">
-    <p><i class="copy">&copy;</i> 2020 <a href="http://sealical.com">Xie Tianyidan</a> All Right Reserved.</p>
-    <p>Powered by <a href="http://hexo.io">Hexo</a>. Theme by <a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
-</footer>
-
-<!--end footer-->
-
-
-<!-- scripts list from theme config.yml -->
-
-<script src="/js/hannah.js"></script>
-
-<script src="/js/canvas-nest.js"></script>
-
-
-<!--begin analytics-->
-
-
-<script type="text/javascript">
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-120901931-1', 'auto');
-    ga('send', 'pageview');
-</script>
-
-<!--end analytics--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-</body>
-<!--end body-->
+          <article
+            aria-labelledby="paper-anywhere"
+            class="publication"
+            data-topics="generation agents"
+          >
+            <a
+              aria-label="Explore anywhere"
+              class="paper-image"
+              href="https://anywheremultiagent.github.io/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="Anywhere places foreground objects into diverse, semantically consistent generated backgrounds."
+                height="1560"
+                loading="lazy"
+                src="personal-assets/images/anywhere.webp"
+                width="1586"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue">AAAI 2025</span
+                ><span class="paper-year">2025</span>
+              </div>
+              <h3 id="paper-anywhere">
+                <a
+                  href="https://ojs.aaai.org/index.php/AAAI/article/view/32797"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Anywhere: A Multi-Agent Framework for User-Guided, Reliable,
+                  and Diverse Foreground-Conditioned Image Generation</a
+                >
+              </h3>
+              <p class="paper-authors">
+                <strong>Tianyidan Xie</strong> et al.
+                <span class="author-role">First author</span>
+              </p>
+              <p class="paper-summary">
+                VLM, LLM, and image-generation agents collaborate to create
+                reliable and diverse backgrounds around a given foreground.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="anywhere paper"
+                  href="https://ojs.aaai.org/index.php/AAAI/article/view/32797"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="anywhere project"
+                  href="https://anywheremultiagent.github.io/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Project <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="anywhere code"
+                  href="https://github.com/Sealical/anywhere-multi-agent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Code <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword"
+                  >Foreground-conditioned generation</span
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            aria-labelledby="paper-egomonth"
+            class="publication"
+            data-topics="memory"
+          >
+            <a
+              aria-label="Explore egomonth"
+              class="paper-image"
+              href="https://arxiv.org/abs/2608.13113"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="EgoMonth connects daily first-person recordings across a month to evaluate long-term spatiotemporal memory."
+                height="1266"
+                loading="lazy"
+                src="personal-assets/images/egomonth.webp"
+                width="3165"
+            /></a>
+            <div class="paper-content">
+              <div class="paper-meta">
+                <span class="venue preprint">Preprint · Under review</span
+                ><span class="paper-year">2026</span>
+              </div>
+              <h3 id="paper-egomonth">
+                <a
+                  href="https://arxiv.org/abs/2608.13113"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >EgoMonth: A Month-Level Egocentric Video Benchmark for
+                  Long-Term Spatiotemporal Memory</a
+                >
+              </h3>
+              <p class="paper-authors">
+                Weitao Chen, Hu Jiaxin, <strong>Tianyidan Xie</strong>, et al.
+                <span class="author-role">Co-author</span>
+              </p>
+              <p class="paper-summary">
+                Evaluating whether multimodal models can maintain spatiotemporal
+                memory across weeks of everyday experience.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="egomonth paper"
+                  href="https://arxiv.org/abs/2608.13113"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><span class="paper-keyword"
+                  >Long-term video understanding</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        aria-labelledby="industry-title"
+        class="industry-section"
+        id="industry"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-number">02 / Research in industry</p>
+              <h2 id="industry-title">
+                Ideas into models<span class="heading-period">.</span>
+              </h2>
+            </div>
+            <p class="industry-context">
+              Core contributions at Skywork AI<br /><span
+                >Kunlun Tech · 2025–2026</span
+              >
+            </p>
+          </div>
+          <div class="industry-grid">
+            <article class="industry-project">
+              <div class="industry-card-top">
+                <span class="eyebrow">Unified generation</span
+                ><span class="project-index">01</span>
+              </div>
+              <h3>Skywork UniPic</h3>
+              <p>
+                I contributed to UniPic 1.0 and 2.0, unifying image
+                understanding, generation, and editing through autoregressive
+                modeling and reinforcement learning.
+              </p>
+              <p class="industry-footnote">
+                One model. Multiple visual capabilities.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="Skywork UniPic 1.0 paper"
+                  href="https://arxiv.org/abs/2508.03320"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >1.0 paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Skywork UniPic 2.0 paper"
+                  href="https://arxiv.org/abs/2509.04548"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >2.0 paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Skywork UniPic Code"
+                  href="https://github.com/SkyworkAI/UniPic"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Code <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="industry-project">
+              <div class="industry-card-top">
+                <span class="eyebrow">Multimodal reasoning</span
+                ><span class="project-index">02</span>
+              </div>
+              <h3>Skywork R1V</h3>
+              <p>
+                I contributed to the R1V series, with a focus on R1V4-Lite:
+                interleaved visual reasoning, active image operations, and
+                multimodal search.
+              </p>
+              <p class="industry-footnote">
+                Think with images. Act with tools.
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="Skywork R1V R1V paper"
+                  href="https://arxiv.org/abs/2504.05599"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >R1V paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Skywork R1V R1V4 paper"
+                  href="https://arxiv.org/abs/2512.02395"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >R1V4 paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Skywork R1V Repository"
+                  href="https://github.com/SkyworkAI/Skywork-R1V"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Repository <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="industry-project">
+              <div class="industry-card-top">
+                <span class="eyebrow">Interactive world models</span
+                ><span class="project-index">03</span>
+              </div>
+              <h3>Matrix-Game 3.0</h3>
+              <p>
+                I contributed to real-time world generation with camera-aware
+                memory, supporting spatial and temporal consistency across long
+                interactive sequences.
+              </p>
+              <p class="industry-footnote">
+                5B parameters · 720p · up to 40 FPS
+              </p>
+              <div class="paper-links">
+                <a
+                  aria-label="Matrix-Game 3.0 Paper"
+                  href="https://arxiv.org/abs/2604.08995"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Paper <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Matrix-Game 3.0 Project"
+                  href="https://matrix-game-v3.github.io/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Project <span aria-hidden="true">↗</span></a
+                ><a
+                  aria-label="Matrix-Game 3.0 Code"
+                  href="https://github.com/SkyworkAI/Matrix-Game/tree/main/Matrix-Game-3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Code <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <details class="more-reports">
+            <summary>
+              Additional technical reports <span class="report-count">02</span
+              ><span aria-hidden="true" class="details-plus">+</span>
+            </summary>
+            <div class="report-list">
+              <a
+                href="https://arxiv.org/abs/2504.16656"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span
+                  >Skywork R1V2: Multimodal Hybrid Reinforcement Learning for
+                  Reasoning</span
+                ><span>2025 <span aria-hidden="true">↗</span></span></a
+              >
+              <a
+                href="https://arxiv.org/abs/2505.07263"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span
+                  >Skywork-VL Reward: An Effective Reward Model for Multimodal
+                  Understanding and Reasoning</span
+                ><span>2025 <span aria-hidden="true">↗</span></span></a
+              >
+            </div>
+          </details>
+        </div>
+      </section>
+      <section
+        aria-labelledby="experience-title"
+        class="section background-section container"
+        id="experience"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-number">03 / Background</p>
+            <h2 id="experience-title">
+              Along the way<span class="heading-period">.</span>
+            </h2>
+          </div>
+        </div>
+        <div class="background-grid">
+          <div class="experience-column">
+            <h3 class="column-title">Research &amp; experience</h3>
+            <ol class="experience-list">
+              <li>
+                <div class="experience-date">Dec 2023 — Present</div>
+                <div>
+                  <h4>Nanjing University</h4>
+                  <p class="experience-role">Research Assistant</p>
+                </div>
+              </li>
+              <li class="skywork-experience">
+                <div class="experience-date">Feb 2025 — Apr 2026</div>
+                <div>
+                  <h4>
+                    <a href="#industry">Skywork AI</a
+                    ><span> / Kunlun Tech</span>
+                  </h4>
+                  <p class="experience-role">Large Model Researcher</p>
+                  <p class="experience-description">
+                    Core contributor · UniPic, R1V &amp; Matrix-Game
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="experience-date">Mar 2022 — Jun 2023</div>
+                <div>
+                  <h4>Xiaohongshu</h4>
+                  <p class="experience-role">NLP Algorithm Engineer</p>
+                </div>
+              </li>
+              <li>
+                <div class="experience-date">Jul 2021 — Jan 2022</div>
+                <div>
+                  <h4>Tencent Music Entertainment</h4>
+                  <p class="experience-role">NLP Algorithm Engineer · Intern</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="education-column">
+            <h3 class="column-title">Education</h3>
+            <div class="education-item">
+              <p class="education-date">2019 — 2022</p>
+              <h4>Southwestern University of Finance and Economics</h4>
+              <p>Master's · Big Data Management</p>
+            </div>
+            <div class="education-item">
+              <p class="education-date">2015 — 2019</p>
+              <h4>Southwest University of Science and Technology</h4>
+              <p>Bachelor's · Information Security</p>
+            </div>
+            <div class="patent-note">
+              <p class="eyebrow">From research to invention</p>
+              <h4>Multi-agent foreground-conditioned image generation</h4>
+              <p>
+                First inventor · CN202411704735.2<br />Under substantive
+                examination
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="contact-title"
+        class="contact-section container"
+      >
+        <div>
+          <p class="eyebrow">Keep in touch</p>
+          <h2 id="contact-title">Let's talk <em>research.</em></h2>
+          <p>Multimodal intelligence, visual worlds, and what comes next.</p>
+        </div>
+        <a class="contact-email" href="mailto:sealical@outlook.com"
+          >sealical@outlook.com <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <p>
+        © 2026 Tianyidan Xie <span class="footer-divider">/</span>
+        <span lang="zh-CN">谢天异丹</span>
+      </p>
+      <div>
+        <a href="blog/">Earlier notes <span aria-hidden="true">↗</span></a
+        ><span class="footer-divider">/</span
+        ><a href="#about">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
 </html>
