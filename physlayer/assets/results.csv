@@ -1,0 +1,63 @@
+table,source,method,metric,value,better
+main,"Main paper, Table 1",PIA,CLIP similarity,16.17,higher
+main,"Main paper, Table 1",PIA,FID,215.06,lower
+main,"Main paper, Table 1",PIA,Motion-FID,418.51,lower
+main,"Main paper, Table 1",PIA,Motion smoothness,0.981,higher
+main,"Main paper, Table 1",DynamiCrafter,CLIP similarity,16.16,higher
+main,"Main paper, Table 1",DynamiCrafter,FID,185.86,lower
+main,"Main paper, Table 1",DynamiCrafter,Motion-FID,429.22,lower
+main,"Main paper, Table 1",DynamiCrafter,Motion smoothness,0.954,higher
+main,"Main paper, Table 1",CogVideoX,CLIP similarity,16.18,higher
+main,"Main paper, Table 1",CogVideoX,FID,120.91,lower
+main,"Main paper, Table 1",CogVideoX,Motion-FID,406.32,lower
+main,"Main paper, Table 1",CogVideoX,Motion smoothness,0.978,higher
+main,"Main paper, Table 1",I2VGen-XL,CLIP similarity,16.28,higher
+main,"Main paper, Table 1",I2VGen-XL,FID,187.35,lower
+main,"Main paper, Table 1",I2VGen-XL,Motion-FID,442.91,lower
+main,"Main paper, Table 1",I2VGen-XL,Motion smoothness,0.956,higher
+main,"Main paper, Table 1",PhysGen,CLIP similarity,,higher
+main,"Main paper, Table 1",PhysGen,FID,112.83,lower
+main,"Main paper, Table 1",PhysGen,Motion-FID,401.61,lower
+main,"Main paper, Table 1",PhysGen,Motion smoothness,0.982,higher
+main,"Main paper, Table 1",PhysLayer,CLIP similarity,16.64,higher
+main,"Main paper, Table 1",PhysLayer,FID,102.32,lower
+main,"Main paper, Table 1",PhysLayer,Motion-FID,389.64,lower
+main,"Main paper, Table 1",PhysLayer,Motion smoothness,0.986,higher
+ablation,"Main paper, Table 2",Without depth scaling,CLIP similarity,16.52,higher
+ablation,"Main paper, Table 2",Without depth scaling,FID,118.45,lower
+ablation,"Main paper, Table 2",Without depth scaling,Motion-FID,405.28,lower
+ablation,"Main paper, Table 2",Without depth scaling,Motion smoothness,0.979,higher
+ablation,"Main paper, Table 2",Without depth motion,CLIP similarity,16.48,higher
+ablation,"Main paper, Table 2",Without depth motion,FID,115.67,lower
+ablation,"Main paper, Table 2",Without depth motion,Motion-FID,398.42,lower
+ablation,"Main paper, Table 2",Without depth motion,Motion smoothness,0.981,higher
+ablation,"Main paper, Table 2",Without relighting,CLIP similarity,16.61,higher
+ablation,"Main paper, Table 2",Without relighting,FID,108.94,lower
+ablation,"Main paper, Table 2",Without relighting,Motion-FID,392.11,lower
+ablation,"Main paper, Table 2",Without relighting,Motion smoothness,0.985,higher
+ablation,"Main paper, Table 2",Without language guidance,CLIP similarity,15.93,higher
+ablation,"Main paper, Table 2",Without language guidance,FID,105.28,lower
+ablation,"Main paper, Table 2",Without language guidance,Motion-FID,391.87,lower
+ablation,"Main paper, Table 2",Without language guidance,Motion smoothness,0.984,higher
+ablation,"Main paper, Table 2",Full PhysLayer,CLIP similarity,16.64,higher
+ablation,"Main paper, Table 2",Full PhysLayer,FID,102.32,lower
+ablation,"Main paper, Table 2",Full PhysLayer,Motion-FID,389.64,lower
+ablation,"Main paper, Table 2",Full PhysLayer,Motion smoothness,0.986,higher
+human,"Main paper, Table 3",PIA,Text–video alignment,1.86,higher
+human,"Main paper, Table 3",PIA,Visual quality,1.68,higher
+human,"Main paper, Table 3",PIA,Physical plausibility,1.55,higher
+human,"Main paper, Table 3",DynamiCrafter,Text–video alignment,1.97,higher
+human,"Main paper, Table 3",DynamiCrafter,Visual quality,2.02,higher
+human,"Main paper, Table 3",DynamiCrafter,Physical plausibility,1.82,higher
+human,"Main paper, Table 3",I2VGen-XL,Text–video alignment,2.21,higher
+human,"Main paper, Table 3",I2VGen-XL,Visual quality,2.54,higher
+human,"Main paper, Table 3",I2VGen-XL,Physical plausibility,2.16,higher
+human,"Main paper, Table 3",CogVideoX,Text–video alignment,3.12,higher
+human,"Main paper, Table 3",CogVideoX,Visual quality,3.35,higher
+human,"Main paper, Table 3",CogVideoX,Physical plausibility,2.63,higher
+human,"Main paper, Table 3",PhysGen,Text–video alignment,,higher
+human,"Main paper, Table 3",PhysGen,Visual quality,3.56,higher
+human,"Main paper, Table 3",PhysGen,Physical plausibility,3.31,higher
+human,"Main paper, Table 3",PhysLayer,Text–video alignment,4.23,higher
+human,"Main paper, Table 3",PhysLayer,Visual quality,3.83,higher
+human,"Main paper, Table 3",PhysLayer,Physical plausibility,4.1,higher

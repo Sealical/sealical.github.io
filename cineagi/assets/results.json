@@ -1,0 +1,168 @@
+{
+  "project": "CineAGI",
+  "paper": "https://arxiv.org/abs/2604.23579",
+  "source": "Author-supplied ICME 2026 manuscript. Values are transcribed, not independently reproduced.",
+  "missing_values": null,
+  "tables": {
+    "main": {
+      "source": "Main paper, Table 1",
+      "metrics": [
+        "Overall consistency",
+        "Subject consistency",
+        "Aesthetic quality",
+        "Motion smoothness"
+      ],
+      "directions": [
+        "higher",
+        "higher",
+        "higher",
+        "higher"
+      ],
+      "precision": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "CogVideoX",
+          0.096,
+          0.823,
+          0.379,
+          0.96
+        ],
+        [
+          "VideoCrafter2",
+          0.076,
+          0.885,
+          0.364,
+          0.92
+        ],
+        [
+          "Hunyuan",
+          0.185,
+          0.909,
+          0.569,
+          0.976
+        ],
+        [
+          "CineAGI",
+          0.259,
+          0.949,
+          0.6,
+          0.987
+        ]
+      ]
+    },
+    "human": {
+      "source": "Main paper, Table 2",
+      "metrics": [
+        "Visual quality",
+        "Narrative coherence",
+        "Character consistency",
+        "Audio coherence",
+        "Overall quality"
+      ],
+      "directions": [
+        "higher",
+        "higher",
+        "higher",
+        "higher",
+        "higher"
+      ],
+      "precision": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "CogVideoX",
+          3.16,
+          2.52,
+          2.21,
+          null,
+          2.63
+        ],
+        [
+          "VideoCrafter2",
+          2.75,
+          2.26,
+          1.98,
+          null,
+          2.45
+        ],
+        [
+          "Hunyuan",
+          3.52,
+          2.91,
+          2.44,
+          null,
+          2.88
+        ],
+        [
+          "CineAGI",
+          3.83,
+          3.57,
+          3.14,
+          3.26,
+          3.37
+        ]
+      ]
+    },
+    "ablation": {
+      "source": "Main paper, Table 3",
+      "metrics": [
+        "Overall consistency",
+        "Subject consistency",
+        "Aesthetic quality",
+        "Motion smoothness"
+      ],
+      "directions": [
+        "higher",
+        "higher",
+        "higher",
+        "higher"
+      ],
+      "precision": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "Without narrative synthesis",
+          0.232,
+          0.924,
+          0.575,
+          0.974
+        ],
+        [
+          "Without quality inspector",
+          0.245,
+          0.938,
+          0.57,
+          0.982
+        ],
+        [
+          "Without character integration",
+          0.206,
+          0.911,
+          0.583,
+          0.971
+        ],
+        [
+          "Full CineAGI",
+          0.259,
+          0.949,
+          0.6,
+          0.987
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "source_directory": "/data1/xietian/CineAGI_paper/CineAGI_ICME_2026/ICME_2026_Template",
+  "transformations": "White background for transparent figures; WebP encoding and proportional resizing. Example frames are rectangular crops of the original paper figure, in original temporal order.",
+  "files": {
+    "challenges.webp": {
+      "source": "teaser.png",
+      "source_sha256": "f9c0a94bfda4fcad78f69d8091a1fc8cd00540763bf220a779cc0b7d87f619d4",
+      "original_size": [
+        2440,
+        1032
+      ]
+    },
+    "framework.webp": {
+      "source": "framework.png",
+      "source_sha256": "26767d6f7d39dd548759c6d12cd65d14d059ca530fb7b76a346ec6fb4304b575",
+      "original_size": [
+        2918,
+        1086
+      ]
+    },
+    "comparison.webp": {
+      "source": "qualitative.png",
+      "source_sha256": "bfeb83dfb051274700fd0783c0da64b1f07370a1e1381a8999e23bbd9519270b",
+      "original_size": [
+        2048,
+        1250
+      ]
+    },
+    "character-integration.webp": {
+      "source": "ablation_face.jpg",
+      "source_sha256": "af48ca9f91dc61865eaf447d96075efd73f99d02c9e785d6d41de418e1497148",
+      "original_size": [
+        3000,
+        1995
+      ]
+    },
+    "cineagi.pdf": {
+      "source": "icme2026_template_anonymized.pdf",
+      "source_sha256": "06b31c1e43a036504c5137e97371c9350f08894b2849f7124972301d5c7ab5e7",
+      "unchanged": true
+    },
+    "appendix.pdf": {
+      "source": "appendix.pdf",
+      "source_sha256": "ec7b7d943c876b4360726620bec2711bac2ad1bb5ee9ea7c18247a393f8177ce",
+      "unchanged": true
+    },
+    "reunion-scene-1.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        311,
+        43,
+        1008,
+        218
+      ]
+    },
+    "reunion-scene-2.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        311,
+        222,
+        1008,
+        391
+      ]
+    },
+    "reunion-scene-3.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        311,
+        397,
+        1008,
+        565
+      ]
+    },
+    "reunion-scene-4.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        311,
+        573,
+        1008,
+        741
+      ]
+    },
+    "music-box-scene-1.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        1306,
+        43,
+        2005,
+        218
+      ]
+    },
+    "music-box-scene-2.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        1306,
+        222,
+        2005,
+        391
+      ]
+    },
+    "music-box-scene-3.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        1306,
+        397,
+        2005,
+        565
+      ]
+    },
+    "music-box-scene-4.webp": {
+      "source": "qualitative.png",
+      "crop_xyxy": [
+        1306,
+        573,
+        2005,
+        741
+      ]
+    }
+  },
+  "manuscripts": {
+    "icme2026_template_anonymized.tex": "4d145a5daa46cdd4298b7b038e27725635380884398da24ced671e44a7676ec8",
+    "appendix.tex": "5b31cb9b7185dd28e95bd177101ac43fe862a197c1e5ed262542bd5c20016b2c"
+  }
+}

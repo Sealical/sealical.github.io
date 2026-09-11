@@ -1,0 +1,187 @@
+{
+  "project": "PhysLayer",
+  "paper": "https://arxiv.org/abs/2604.23574",
+  "source": "Author-supplied ICME 2026 manuscript. Values are transcribed, not independently reproduced.",
+  "missing_values": null,
+  "tables": {
+    "main": {
+      "source": "Main paper, Table 1",
+      "metrics": [
+        "CLIP similarity",
+        "FID",
+        "Motion-FID",
+        "Motion smoothness"
+      ],
+      "directions": [
+        "higher",
+        "lower",
+        "lower",
+        "higher"
+      ],
+      "precision": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "rows": [
+        [
+          "PIA",
+          16.17,
+          215.06,
+          418.51,
+          0.981
+        ],
+        [
+          "DynamiCrafter",
+          16.16,
+          185.86,
+          429.22,
+          0.954
+        ],
+        [
+          "CogVideoX",
+          16.18,
+          120.91,
+          406.32,
+          0.978
+        ],
+        [
+          "I2VGen-XL",
+          16.28,
+          187.35,
+          442.91,
+          0.956
+        ],
+        [
+          "PhysGen",
+          null,
+          112.83,
+          401.61,
+          0.982
+        ],
+        [
+          "PhysLayer",
+          16.64,
+          102.32,
+          389.64,
+          0.986
+        ]
+      ]
+    },
+    "ablation": {
+      "source": "Main paper, Table 2",
+      "metrics": [
+        "CLIP similarity",
+        "FID",
+        "Motion-FID",
+        "Motion smoothness"
+      ],
+      "directions": [
+        "higher",
+        "lower",
+        "lower",
+        "higher"
+      ],
+      "precision": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "rows": [
+        [
+          "Without depth scaling",
+          16.52,
+          118.45,
+          405.28,
+          0.979
+        ],
+        [
+          "Without depth motion",
+          16.48,
+          115.67,
+          398.42,
+          0.981
+        ],
+        [
+          "Without relighting",
+          16.61,
+          108.94,
+          392.11,
+          0.985
+        ],
+        [
+          "Without language guidance",
+          15.93,
+          105.28,
+          391.87,
+          0.984
+        ],
+        [
+          "Full PhysLayer",
+          16.64,
+          102.32,
+          389.64,
+          0.986
+        ]
+      ]
+    },
+    "human": {
+      "source": "Main paper, Table 3",
+      "metrics": [
+        "Text\u2013video alignment",
+        "Visual quality",
+        "Physical plausibility"
+      ],
+      "directions": [
+        "higher",
+        "higher",
+        "higher"
+      ],
+      "precision": [
+        2,
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "PIA",
+          1.86,
+          1.68,
+          1.55
+        ],
+        [
+          "DynamiCrafter",
+          1.97,
+          2.02,
+          1.82
+        ],
+        [
+          "I2VGen-XL",
+          2.21,
+          2.54,
+          2.16
+        ],
+        [
+          "CogVideoX",
+          3.12,
+          3.35,
+          2.63
+        ],
+        [
+          "PhysGen",
+          null,
+          3.56,
+          3.31
+        ],
+        [
+          "PhysLayer",
+          4.23,
+          3.83,
+          4.1
+        ]
+      ]
+    }
+  }
+}

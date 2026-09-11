@@ -30,6 +30,8 @@ The original 2018 blog landing page is preserved, byte for byte, in `blog/index.
 
 The PhysCodeBench project is served from `physcodebench/` in this repository, with its own static page, simulation comparisons, experimental analysis, and single-column revised paper. See [its maintenance notes](physcodebench/README.md) for content and media sources.
 
+The ICME 2026 projects [PhysLayer](physlayer/README.md) and [CineAGI](cineagi/README.md) are served from `physlayer/` and `cineagi/`. Both include original paper examples, methods, complete result tables, ablations, human evaluation, and paper/appendix downloads. They share `project-assets/research.css` and `project-assets/research.js`, while keeping project-specific media and data in their own directories. Their maintenance notes record manuscript sources and authorship conventions.
+
 ## Design and image sources
 
 The design is original. Research-first information structure was informed by the personal sites of [Saining Xie](https://www.sainingxie.com/), [Jiajun Wu](https://jiajunwu.com/), and [Shuran Song](https://shurans.github.io/). No code or portraits were copied from these sites.

@@ -1,0 +1,53 @@
+table,source,method,metric,value,better
+main,"Main paper, Table 1",CogVideoX,Overall consistency,0.096,higher
+main,"Main paper, Table 1",CogVideoX,Subject consistency,0.823,higher
+main,"Main paper, Table 1",CogVideoX,Aesthetic quality,0.379,higher
+main,"Main paper, Table 1",CogVideoX,Motion smoothness,0.96,higher
+main,"Main paper, Table 1",VideoCrafter2,Overall consistency,0.076,higher
+main,"Main paper, Table 1",VideoCrafter2,Subject consistency,0.885,higher
+main,"Main paper, Table 1",VideoCrafter2,Aesthetic quality,0.364,higher
+main,"Main paper, Table 1",VideoCrafter2,Motion smoothness,0.92,higher
+main,"Main paper, Table 1",Hunyuan,Overall consistency,0.185,higher
+main,"Main paper, Table 1",Hunyuan,Subject consistency,0.909,higher
+main,"Main paper, Table 1",Hunyuan,Aesthetic quality,0.569,higher
+main,"Main paper, Table 1",Hunyuan,Motion smoothness,0.976,higher
+main,"Main paper, Table 1",CineAGI,Overall consistency,0.259,higher
+main,"Main paper, Table 1",CineAGI,Subject consistency,0.949,higher
+main,"Main paper, Table 1",CineAGI,Aesthetic quality,0.6,higher
+main,"Main paper, Table 1",CineAGI,Motion smoothness,0.987,higher
+human,"Main paper, Table 2",CogVideoX,Visual quality,3.16,higher
+human,"Main paper, Table 2",CogVideoX,Narrative coherence,2.52,higher
+human,"Main paper, Table 2",CogVideoX,Character consistency,2.21,higher
+human,"Main paper, Table 2",CogVideoX,Audio coherence,,higher
+human,"Main paper, Table 2",CogVideoX,Overall quality,2.63,higher
+human,"Main paper, Table 2",VideoCrafter2,Visual quality,2.75,higher
+human,"Main paper, Table 2",VideoCrafter2,Narrative coherence,2.26,higher
+human,"Main paper, Table 2",VideoCrafter2,Character consistency,1.98,higher
+human,"Main paper, Table 2",VideoCrafter2,Audio coherence,,higher
+human,"Main paper, Table 2",VideoCrafter2,Overall quality,2.45,higher
+human,"Main paper, Table 2",Hunyuan,Visual quality,3.52,higher
+human,"Main paper, Table 2",Hunyuan,Narrative coherence,2.91,higher
+human,"Main paper, Table 2",Hunyuan,Character consistency,2.44,higher
+human,"Main paper, Table 2",Hunyuan,Audio coherence,,higher
+human,"Main paper, Table 2",Hunyuan,Overall quality,2.88,higher
+human,"Main paper, Table 2",CineAGI,Visual quality,3.83,higher
+human,"Main paper, Table 2",CineAGI,Narrative coherence,3.57,higher
+human,"Main paper, Table 2",CineAGI,Character consistency,3.14,higher
+human,"Main paper, Table 2",CineAGI,Audio coherence,3.26,higher
+human,"Main paper, Table 2",CineAGI,Overall quality,3.37,higher
+ablation,"Main paper, Table 3",Without narrative synthesis,Overall consistency,0.232,higher
+ablation,"Main paper, Table 3",Without narrative synthesis,Subject consistency,0.924,higher
+ablation,"Main paper, Table 3",Without narrative synthesis,Aesthetic quality,0.575,higher
+ablation,"Main paper, Table 3",Without narrative synthesis,Motion smoothness,0.974,higher
+ablation,"Main paper, Table 3",Without quality inspector,Overall consistency,0.245,higher
+ablation,"Main paper, Table 3",Without quality inspector,Subject consistency,0.938,higher
+ablation,"Main paper, Table 3",Without quality inspector,Aesthetic quality,0.57,higher
+ablation,"Main paper, Table 3",Without quality inspector,Motion smoothness,0.982,higher
+ablation,"Main paper, Table 3",Without character integration,Overall consistency,0.206,higher
+ablation,"Main paper, Table 3",Without character integration,Subject consistency,0.911,higher
+ablation,"Main paper, Table 3",Without character integration,Aesthetic quality,0.583,higher
+ablation,"Main paper, Table 3",Without character integration,Motion smoothness,0.971,higher
+ablation,"Main paper, Table 3",Full CineAGI,Overall consistency,0.259,higher
+ablation,"Main paper, Table 3",Full CineAGI,Subject consistency,0.949,higher
+ablation,"Main paper, Table 3",Full CineAGI,Aesthetic quality,0.6,higher
+ablation,"Main paper, Table 3",Full CineAGI,Motion smoothness,0.987,higher

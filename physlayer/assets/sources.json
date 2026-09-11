@@ -1,0 +1,224 @@
+{
+  "source_directory": "/data1/xietian/PhysLayer_paper/ICME_2026_Template",
+  "transformations": "White background for transparent figures; WebP encoding and proportional resizing. Example frames are rectangular crops of the original paper figure, in original temporal order.",
+  "files": {
+    "overview.webp": {
+      "source": "teaser_image_v4.png",
+      "source_sha256": "8c85ccb5254b741310b72dd147378f52442ca3c665bad2bb8da04cd50f3e9b30",
+      "original_size": [
+        3757,
+        2578
+      ]
+    },
+    "framework.webp": {
+      "source": "mm_framework_v2.png",
+      "source_sha256": "d9c9a157458a0bb7ba4e9120b25fd7350709e991b8aa31ce32fd97af67d2c597",
+      "original_size": [
+        6004,
+        1954
+      ]
+    },
+    "comparison.webp": {
+      "source": "mm_qualitative_v2.png",
+      "source_sha256": "0909c106d040fb5c7fd90bb1feb01e58e4d6ca541e9486e4fb5f389cf3e5e743",
+      "original_size": [
+        5270,
+        1373
+      ]
+    },
+    "physlayer.pdf": {
+      "source": "icme2026_template_anonymized.pdf",
+      "source_sha256": "1202c0977552392213d79c7f4dc585e007167125006733faa9d56a218451cd68",
+      "unchanged": true
+    },
+    "appendix.pdf": {
+      "source": "appendix.pdf",
+      "source_sha256": "cfe97d1ca7c61645089b2f6332a33fd1f621f96625844e0f92f4ede4130f23bf",
+      "unchanged": true
+    },
+    "stones-input.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        274,
+        12,
+        830,
+        375
+      ]
+    },
+    "stones-1.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1045,
+        0,
+        1696,
+        428
+      ]
+    },
+    "stones-2.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1726,
+        0,
+        2377,
+        428
+      ]
+    },
+    "stones-3.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        2410,
+        0,
+        3059,
+        428
+      ]
+    },
+    "stones-4.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        3093,
+        0,
+        3750,
+        428
+      ]
+    },
+    "ball-input.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        274,
+        485,
+        830,
+        1037
+      ]
+    },
+    "ball-1.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1045,
+        466,
+        1696,
+        1117
+      ]
+    },
+    "ball-2.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1726,
+        466,
+        2377,
+        1117
+      ]
+    },
+    "ball-3.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        2410,
+        466,
+        3059,
+        1117
+      ]
+    },
+    "ball-4.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        3093,
+        466,
+        3750,
+        1117
+      ]
+    },
+    "car-input.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        274,
+        1177,
+        830,
+        1540
+      ]
+    },
+    "car-1.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1045,
+        1158,
+        1696,
+        1590
+      ]
+    },
+    "car-2.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1726,
+        1158,
+        2377,
+        1590
+      ]
+    },
+    "car-3.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        2410,
+        1158,
+        3059,
+        1590
+      ]
+    },
+    "car-4.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        3093,
+        1158,
+        3750,
+        1590
+      ]
+    },
+    "table-input.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        274,
+        1677,
+        830,
+        2219
+      ]
+    },
+    "table-1.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1045,
+        1624,
+        1696,
+        2340
+      ]
+    },
+    "table-2.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        1726,
+        1624,
+        2377,
+        2340
+      ]
+    },
+    "table-3.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        2410,
+        1624,
+        3059,
+        2340
+      ]
+    },
+    "table-4.webp": {
+      "source": "teaser_image_v4.png",
+      "crop_xyxy": [
+        3093,
+        1624,
+        3750,
+        2340
+      ]
+    }
+  },
+  "manuscripts": {
+    "icme2026_template_anonymized.tex": "f55bf46deced6bef2dbad086646bfaa0e4972b16468ab1d4ffff466152bf2b3c",
+    "appendix.tex": "385642d814dd877a14e15ae8860f5881c3b8ed0c826d831f1773d342f77b6414"
+  }
+}
