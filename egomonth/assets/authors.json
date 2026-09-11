@@ -1,0 +1,118 @@
+{
+  "source": "Author block in arXiv:2608.13113v1 PDF and TeX",
+  "name_normalization": {
+    "Hu Jiaxin": "Jiaxin Hu",
+    "Xie Tianyidan": "Tianyidan Xie"
+  },
+  "normalization_note": "English name order follows the user-confirmed spellings already used on their project pages. Author order, affiliations, equal contribution, and corresponding-author roles follow this paper.",
+  "authors": [
+    {
+      "name": "Weitao Chen",
+      "affiliation": "Nanjing University",
+      "equal_contribution": true,
+      "corresponding": false
+    },
+    {
+      "name": "Jiaxin Hu",
+      "affiliation": "Nanjing University",
+      "equal_contribution": true,
+      "corresponding": false
+    },
+    {
+      "name": "Tianyidan Xie",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Yang Li",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Yuyi Qian",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Banghao Xu",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Ziheng Tang",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Shenyi Wang",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Mingyue Yu",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Duo Li",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Jiacheng Shi",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Gao Wang",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Zhan Xu",
+      "affiliation": "Huawei Technologies Co., Ltd.",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Zhicheng Qiu",
+      "affiliation": "Huawei Technologies Co., Ltd.",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Xuanfu Li",
+      "affiliation": "Huawei Technologies Co., Ltd.",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Jian Yang",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": false
+    },
+    {
+      "name": "Lanjun Wang",
+      "affiliation": "Tianjin University",
+      "equal_contribution": false,
+      "corresponding": true
+    },
+    {
+      "name": "Zili Yi",
+      "affiliation": "Nanjing University",
+      "equal_contribution": false,
+      "corresponding": true
+    }
+  ]
+}

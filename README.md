@@ -32,6 +32,8 @@ The PhysCodeBench project is served from `physcodebench/` in this repository, wi
 
 The ICME 2026 projects [PhysLayer](physlayer/README.md) and [CineAGI](cineagi/README.md) are served from `physlayer/` and `cineagi/`. Both include original paper examples, methods, complete result tables, ablations, human evaluation, and paper/appendix downloads. They share `project-assets/research.css` and `project-assets/research.js`, while keeping project-specific media and data in their own directories. Their maintenance notes record manuscript sources and authorship conventions.
 
+The [EgoMonth project](egomonth/README.md) is served from `egomonth/`. It includes original QA examples, a three-level task explorer, per-task model comparisons and complete downloadable results, author contacts for research access, and the public paper with appendices. It reuses the shared project presentation and adds its own theme and result selector. Content follows the public arXiv v1 rather than the earlier anonymous ZIP; the project notes record the version and author-name conventions.
+
 ## Design and image sources
 
 The design is original. Research-first information structure was informed by the personal sites of [Saining Xie](https://www.sainingxie.com/), [Jiajun Wu](https://jiajunwu.com/), and [Shuran Song](https://shurans.github.io/). No code or portraits were copied from these sites.

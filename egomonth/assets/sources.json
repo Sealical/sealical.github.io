@@ -1,0 +1,106 @@
+{
+  "content_version": "arXiv:2608.13113v1",
+  "paper_url": "https://arxiv.org/pdf/2608.13113v1",
+  "source_url": "https://arxiv.org/src/2608.13113v1",
+  "retrieved": "2026-09-11",
+  "images": [
+    {
+      "asset": "overview",
+      "source": "teaser.png",
+      "figure": "Figure 1",
+      "original_size": [
+        3165,
+        1266
+      ],
+      "web_size": [
+        2000,
+        800
+      ],
+      "source_sha256": "8cc29487df4b02074fc495498e90333813de677e2d7d6b82feea806645579fb5",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    },
+    {
+      "asset": "single-video",
+      "source": "QA1.png",
+      "figure": "Figure 2, upper example",
+      "original_size": [
+        1115,
+        530
+      ],
+      "web_size": [
+        1115,
+        530
+      ],
+      "source_sha256": "afb0e304a5a63dc4a562ceaf54a6b504b276399bb2b30f2323445d0e538ead58",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    },
+    {
+      "asset": "cross-video",
+      "source": "QA2.png",
+      "figure": "Figure 2, lower example",
+      "original_size": [
+        1115,
+        628
+      ],
+      "web_size": [
+        1115,
+        628
+      ],
+      "source_sha256": "b6d2daada8c35df295ed53ba89a8a3fbccd4b17bbfa378571b88be247ba54ac4",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    },
+    {
+      "asset": "dataset-distribution",
+      "source": "data_static.png",
+      "figure": "Figure 3(a)",
+      "original_size": [
+        2856,
+        1671
+      ],
+      "web_size": [
+        2000,
+        1170
+      ],
+      "source_sha256": "a71b3590684315e1bcaf501a6133391dff423a3d3b1b9048d153757c7ee5eb03",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    },
+    {
+      "asset": "task-distribution",
+      "source": "task_distribution_final.png",
+      "figure": "Figure 3(b)",
+      "original_size": [
+        2112,
+        1365
+      ],
+      "web_size": [
+        2000,
+        1293
+      ],
+      "source_sha256": "b32feecc7b3e2471b32297ef55491a63e6b7618359816cc519492a021ecee48d",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    },
+    {
+      "asset": "activity-distribution",
+      "source": "sunburst_activity_new.png",
+      "figure": "Figure 4",
+      "original_size": [
+        2600,
+        2600
+      ],
+      "web_size": [
+        2000,
+        2000
+      ],
+      "source_sha256": "cd015fd76622d0dc52ea9ace7f808ba355460d82e752e7be4f9dd5988aaf80f1",
+      "processing": "Composite transparency on white; preserve full figure and aspect ratio; WebP encoding. No crops or generated scientific imagery."
+    }
+  ],
+  "source_files": {
+    "egomonth_nips.tex": "1a902a1ba9b1eeba930631ab5960bcd4efe663a0093e2b06e3f22ee6649d70f3",
+    "egomonth_appendix.tex": "b79a4d22ac086831235de5496fe467686432b07da326200ad7119facb0164d8b",
+    "checklist.tex": "7a78fd1eb5e274629c2b45724a3409a9a019636c763e22191cfc459bb52a6033"
+  },
+  "original_archive_sha256": "49e186b3de05079f7d1b560ca8dc161894f46f5dab47e82b2d412c4aa2fb3975",
+  "version_note": "The user-supplied ZIP is an earlier anonymous draft (17 tasks, 1,508 QA). The project page follows the existing public arXiv v1 (14 tasks, 1,443 QA); versions are not mixed.",
+  "paper_sha256": "6747ddc4c6f9303ea3e7ed2e427b1e8707235e60cd4cf05e45abfd4d13cdffc1"
+}
