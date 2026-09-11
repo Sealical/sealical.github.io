@@ -1,0 +1,1353 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#fafbf8" name="theme-color" />
+    <meta content="light" name="color-scheme" />
+    <title>PhysCodeBench · From language to physical simulation</title>
+    <meta
+      content="PhysCodeBench benchmarks physics simulation code generation. Explore the benchmark, PhysCodeEval, and the Self-Corrective Multi-Agent Refinement framework through results and simulation videos."
+      name="description"
+    />
+    <link href="https://sealical.github.io/physcodebench/" rel="canonical" />
+    <meta content="website" property="og:type" />
+    <meta
+      content="PhysCodeBench · From language to physical simulation"
+      property="og:title"
+    />
+    <meta
+      content="A benchmark, an evaluation suite, and a multi-agent framework for executable, physically grounded simulations."
+      property="og:description"
+    />
+    <meta
+      content="https://sealical.github.io/physcodebench/"
+      property="og:url"
+    />
+    <meta
+      content="https://sealical.github.io/physcodebench/assets/images/social-preview.png"
+      property="og:image"
+    />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta
+      content="PhysCodeBench: from language to physical simulation. Benchmark, evaluate, refine."
+      property="og:image:alt"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link
+      as="font"
+      crossorigin=""
+      href="../personal-assets/fonts/instrument-serif-400.ttf"
+      rel="preload"
+      type="font/ttf"
+    />
+    <link href="project.css" rel="stylesheet" />
+    <script defer="" src="project.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top"
+          ><span aria-hidden="true" class="logo">P<span>↗</span></span
+          >PhysCodeBench</a
+        >
+        <nav aria-label="Project navigation">
+          <a href="#demos">Demos</a>
+          <a href="#benchmark">Benchmark</a>
+          <a href="#method">Method</a>
+          <a href="#results">Results</a>
+          <a class="nav-paper" href="assets/physcodebench.pdf"
+            >Paper <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section aria-labelledby="project-title" class="hero container" id="top">
+        <p class="eyebrow hero-kicker">
+          <span aria-hidden="true" class="status-dot"></span> Physics simulation
+          <span aria-hidden="true">/</span> Code generation
+          <span class="year">2026</span>
+        </p>
+        <h1 id="project-title">
+          Phys<span>Code</span>Bench<span class="title-period">.</span>
+        </h1>
+        <p class="paper-title">
+          Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes<br
+            class="desktop-break"
+          />
+          via Self-Corrective Multi-Agent Refinement
+        </p>
+        <p class="hero-line">From language to simulations that obey physics.</p>
+        <div aria-label="Authors" class="authors">
+          <span><a href="../">Tianyidan Xie</a><sup>1</sup></span
+          ><span>Peiyu Wang<sup>2</sup></span
+          ><span>Yuyi Qian<sup>1</sup></span
+          ><span>Yuxuan Wang<sup>1</sup></span
+          ><span>Rui Ma<sup>3</sup></span
+          ><span>Ying Tai<sup>1</sup></span
+          ><span>Song Wu<sup>4</sup></span
+          ><span>Qian Wang<sup>4</sup></span
+          ><span>Lanjun Wang<sup>5</sup></span
+          ><span>Zili Yi<sup>1,✉</sup></span>
+        </div>
+        <div aria-label="Affiliations" class="affiliations">
+          <span><sup>1</sup>Nanjing University</span
+          ><span><sup>2</sup>Skywork AI</span
+          ><span><sup>3</sup>Jilin University</span
+          ><span><sup>4</sup>JIUTIAN Research</span
+          ><span><sup>5</sup>Tianjin University</span>
+        </div>
+        <p class="correspondence">
+          ✉ Corresponding author: <a href="mailto:yi@nju.edu.cn">Zili Yi</a>
+        </p>
+        <div class="resource-links">
+          <a class="button button-primary" href="assets/physcodebench.pdf"
+            >Updated paper <span aria-hidden="true">↗</span></a
+          >
+          <a
+            class="button"
+            href="https://arxiv.org/abs/2604.23580"
+            rel="noopener noreferrer"
+            target="_blank"
+            >arXiv <span aria-hidden="true">↗</span></a
+          >
+          <a class="button" href="#demos"
+            >Watch simulations <span aria-hidden="true">↓</span></a
+          >
+          <a class="button button-quiet" href="#citation"
+            >Cite this work <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <p class="release-note">
+          Revised manuscript · Code and dataset release forthcoming
+        </p>
+        <figure class="overview-figure">
+          <a
+            aria-label="Open the PhysCodeBench overview at full resolution"
+            class="figure-link"
+            href="../personal-assets/images/physcodebench-overview.png"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="PhysCodeBench pairs simulation instructions with engine documentation. SMRF generates, corrects, and refines simulation code, and PhysCodeEval measures code, visual fidelity, and physics."
+              fetchpriority="high"
+              height="1300"
+              src="assets/images/overview.webp"
+              width="2400"
+            />
+            <span aria-hidden="true" class="expand-label">Full figure ↗</span>
+          </a>
+          <figcaption>
+            <strong>One task, three complementary contributions.</strong>
+            PhysCodeBench defines the task; PhysCodeEval measures its outputs;
+            SMRF provides a specialized multi-agent reference method.
+          </figcaption>
+        </figure>
+        <div aria-label="Benchmark at a glance" class="at-a-glance">
+          <div>
+            <strong>1,200</strong><span>expert-validated examples</span>
+          </div>
+          <div><strong>4</strong><span>physical domains</span></div>
+          <div>
+            <strong>1,000 <i>/</i> 200</strong
+            ><span>training / testing examples</span>
+          </div>
+          <div><strong>3</strong><span>specialized agents</span></div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="abstract-title"
+        class="research-abstract container"
+      >
+        <div>
+          <p class="eyebrow">The research</p>
+          <h2 id="abstract-title">Abstract<span>.</span></h2>
+        </div>
+        <div class="abstract-copy">
+          <p>
+            Translating a natural-language description of a physical phenomenon
+            into executable simulation code requires programming expertise and
+            physical reasoning. We introduce <strong>PhysCodeBench</strong>,
+            with 1,200 expert-validated examples across four physical domains.
+            Its evaluation suite, <strong>PhysCodeEval</strong>, assesses code
+            quality and visual fidelity, then measures physical correctness
+            directly from engine state through conservation-law residuals and
+            expert-written assertions. A MuJoCo-native test subset enables
+            evaluation across engines.
+          </p>
+          <p>
+            Our reference method, the
+            <strong
+              >Self-Corrective Multi-Agent Refinement Framework (SMRF)</strong
+            >, separates generation, physics-aware error correction, and
+            refinement into specialized agents. Targeted correction is the main
+            driver of improved physical accuracy. The full framework reaches
+            <strong>67.2 / 100</strong> on the total score and
+            <strong>70.6%</strong> on physical assertions, compared with 35.9
+            and 23.8% for the best proprietary baseline. Its advantage extends
+            to hard scenarios and cross-engine transfer.
+          </p>
+        </div>
+      </section>
+      <section
+        aria-labelledby="demos-title"
+        class="section demos-section"
+        id="demos"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / In motion</p>
+              <h2 id="demos-title">Watch the simulations<span>.</span></h2>
+            </div>
+            <p>
+              Instructions become executable worlds.<br />Compare generated
+              rollouts side by side.
+            </p>
+          </div>
+          <div aria-label="Choose a simulation" class="demo-tabs" hidden="">
+            <button data-demo="cloth" id="tab-cloth" type="button">
+              Cloth &amp; contact
+            </button>
+            <button data-demo="rain" id="tab-rain" type="button">
+              Rain &amp; ripples
+            </button>
+            <button data-demo="duck" id="tab-duck" type="button">
+              Fluid &amp; objects
+            </button>
+          </div>
+          <div class="demo-panel" id="demo-cloth">
+            <div class="demo-panel-header">
+              <h3>“Simulate a cloth falling over a sphere.”</h3>
+              <button class="button play-comparison" hidden="" type="button">
+                Play comparison ↗
+              </button>
+            </div>
+            <div class="video-grid">
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="">Claude-3.5-Sonnet</span><span>Zero-shot</span>
+                </div>
+                <video
+                  aria-describedby="caption-cloth-baseline"
+                  aria-label="Simulate a cloth falling over a sphere. — Claude-3.5-Sonnet"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/cloth-baseline.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source
+                    src="assets/videos/cloth-baseline.mp4"
+                    type="video/mp4"
+                  />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/cloth-baseline.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-cloth-baseline">
+                  A flat sheet moves past the sphere without wrapping around it.
+                </figcaption>
+              </figure>
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="ours-label">SMRF + SFT + DPO</span
+                  ><span>Our framework</span>
+                </div>
+                <video
+                  aria-describedby="caption-cloth-smrf"
+                  aria-label="Simulate a cloth falling over a sphere. — SMRF + SFT + DPO"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/cloth-smrf.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source src="assets/videos/cloth-smrf.mp4" type="video/mp4" />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/cloth-smrf.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-cloth-smrf">
+                  The cloth deforms on contact and drapes around the sphere.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="demo-panel" id="demo-rain">
+            <div class="demo-panel-header">
+              <h3>“Simulate raindrops falling with ripple effects.”</h3>
+              <button class="button play-comparison" hidden="" type="button">
+                Play comparison ↗
+              </button>
+            </div>
+            <div class="video-grid">
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="">Claude-3.5-Sonnet</span><span>Zero-shot</span>
+                </div>
+                <video
+                  aria-describedby="caption-rain-baseline"
+                  aria-label="Simulate raindrops falling with ripple effects. — Claude-3.5-Sonnet"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/rain-baseline.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source
+                    src="assets/videos/rain-baseline.mp4"
+                    type="video/mp4"
+                  />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/rain-baseline.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-rain-baseline">
+                  Droplets fall toward the water surface with limited surface
+                  response.
+                </figcaption>
+              </figure>
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="ours-label">SMRF + SFT + DPO</span
+                  ><span>Our framework</span>
+                </div>
+                <video
+                  aria-describedby="caption-rain-smrf"
+                  aria-label="Simulate raindrops falling with ripple effects. — SMRF + SFT + DPO"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/rain-smrf.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source src="assets/videos/rain-smrf.mp4" type="video/mp4" />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/rain-smrf.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-rain-smrf">
+                  Droplets produce splashes and spreading surface disturbances.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="demo-panel" id="demo-duck">
+            <div class="demo-panel-header">
+              <h3>“Pour liquid over a duck with a side-view camera.”</h3>
+              <button class="button play-comparison" hidden="" type="button">
+                Play comparison ↗
+              </button>
+            </div>
+            <div class="video-grid">
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="">Claude-3.5-Sonnet</span><span>Zero-shot</span>
+                </div>
+                <video
+                  aria-describedby="caption-duck-baseline"
+                  aria-label="Pour liquid over a duck with a side-view camera. — Claude-3.5-Sonnet"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/duck-baseline.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source
+                    src="assets/videos/duck-baseline.mp4"
+                    type="video/mp4"
+                  />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/duck-baseline.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-duck-baseline">
+                  Small particle groups move past the duck with limited visible
+                  interaction.
+                </figcaption>
+              </figure>
+              <figure class="video-card">
+                <div class="video-label">
+                  <span class="ours-label">SMRF + SFT + DPO</span
+                  ><span>Our framework</span>
+                </div>
+                <video
+                  aria-describedby="caption-duck-smrf"
+                  aria-label="Pour liquid over a duck with a side-view camera. — SMRF + SFT + DPO"
+                  controls=""
+                  height="480"
+                  muted=""
+                  playsinline=""
+                  poster="assets/images/duck-smrf.webp"
+                  preload="none"
+                  width="960"
+                >
+                  <source src="assets/videos/duck-smrf.mp4" type="video/mp4" />
+                  <p>
+                    Your browser does not support this video.
+                    <a href="assets/videos/duck-smrf.mp4"
+                      >Download the simulation clip</a
+                    >.
+                  </p>
+                </video>
+                <figcaption id="caption-duck-smrf">
+                  A liquid stream interacts with the duck and spreads around its
+                  surface.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="section-note">
+            Original simulation outputs, presented at their original playback
+            speed. Each clip retains its original duration. These visual
+            examples complement the state-based evaluation below.
+          </p>
+        </div>
+      </section>
+      <section
+        aria-labelledby="benchmark-title"
+        class="section container"
+        id="benchmark"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / The benchmark</p>
+            <h2 id="benchmark-title">
+              A test of physical understanding<span>.</span>
+            </h2>
+          </div>
+        </div>
+        <div class="intro-grid">
+          <p class="section-lead">
+            PhysCodeBench asks a model to translate a natural-language scenario
+            into a complete, executable physics simulation.
+          </p>
+          <p>
+            Each example pairs an instruction with an expert-validated Genesis
+            implementation. Annotations cover difficulty, physical laws, object
+            types, and preferences. Seed-level isolation keeps training and
+            testing scenario families separate.
+          </p>
+        </div>
+        <div aria-label="Dataset composition" class="domain-grid">
+          <article>
+            <span class="domain-index">01</span>
+            <h3>Rigid body</h3>
+            <p>Contact, collisions, and motion.</p>
+            <div class="domain-count">
+              <strong>410</strong><span>examples</span>
+            </div>
+            <div aria-hidden="true" class="domain-bar">
+              <i style="width: 100%"></i>
+            </div>
+          </article>
+          <article>
+            <span class="domain-index">02</span>
+            <h3>Soft body</h3>
+            <p>Deformation, elasticity, and cloth.</p>
+            <div class="domain-count">
+              <strong>310</strong><span>examples</span>
+            </div>
+            <div aria-hidden="true" class="domain-bar">
+              <i style="width: 75.6%"></i>
+            </div>
+          </article>
+          <article>
+            <span class="domain-index">03</span>
+            <h3>Fluid dynamics</h3>
+            <p>Droplets, flow, and interactions.</p>
+            <div class="domain-count">
+              <strong>275</strong><span>examples</span>
+            </div>
+            <div aria-hidden="true" class="domain-bar">
+              <i style="width: 67.1%"></i>
+            </div>
+          </article>
+          <article>
+            <span class="domain-index">04</span>
+            <h3>Mechanics</h3>
+            <p>Forces, constraints, and stability.</p>
+            <div class="domain-count">
+              <strong>205</strong><span>examples</span>
+            </div>
+            <div aria-hidden="true" class="domain-bar">
+              <i style="width: 50%"></i>
+            </div>
+          </article>
+        </div>
+        <div class="benchmark-notes">
+          <p>
+            <strong>Two difficulty levels.</strong> 709 easy and 491 hard
+            examples; hard scenarios combine interacting laws, multiple phases,
+            or sensitive physical parameters.
+          </p>
+          <p>
+            <strong>Across engines.</strong> A 120-instruction test subset
+            includes MuJoCo-native implementations and assertions to evaluate
+            transfer beyond Genesis.
+          </p>
+        </div>
+        <details class="figure-details">
+          <summary>
+            How the dataset is built <span aria-hidden="true">+</span>
+          </summary>
+          <figure>
+            <img
+              alt="Dataset curation: expert seed prompts, model-assisted expansion, human filtering, executable simulation validation, expert revision, and metadata annotation."
+              height="937"
+              loading="lazy"
+              src="assets/images/curation.webp"
+              width="2400"
+            />
+            <figcaption>
+              The four-stage curation pipeline combines model-assisted
+              generation with expert validation and annotation. The final test
+              set includes 80 instructions written entirely by experts.
+            </figcaption>
+          </figure>
+        </details>
+      </section>
+      <section
+        aria-labelledby="evaluation-title"
+        class="section evaluation-section"
+        id="evaluation"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / PhysCodeEval</p>
+              <h2 id="evaluation-title">Measure the physics<span>.</span></h2>
+            </div>
+            <p>
+              Execution, appearance, and physical correctness<br />answer
+              different questions.
+            </p>
+          </div>
+          <div class="evaluation-grid">
+            <article>
+              <div class="metric-heading">
+                <span class="eyebrow">Code quality</span
+                ><span class="metric-budget">/ 50</span>
+              </div>
+              <h3>Does it run?</h3>
+              <p>
+                Execution success and production of the expected simulation
+                artifact, checked for existence, size, and format compliance.
+              </p>
+              <span class="metric-symbol">S<sub>code</sub></span>
+            </article>
+            <article>
+              <div class="metric-heading">
+                <span class="eyebrow">Visual fidelity</span
+                ><span class="metric-budget">/ 50</span>
+              </div>
+              <h3>Does it match?</h3>
+              <p>
+                Instruction–video alignment and motion quality, measuring
+                semantic fidelity and identifying unstable or implausible
+                motion.
+              </p>
+              <span class="metric-symbol">S<sub>visual</sub></span>
+            </article>
+            <article class="physics-metric">
+              <div class="metric-heading">
+                <span class="eyebrow">Physical correctness</span
+                ><span class="metric-budget">%</span>
+              </div>
+              <h3>Does it obey the laws?</h3>
+              <p>
+                Expert-written assertions read directly from engine state.
+                Assertions of programs that fail to execute count as failed.
+              </p>
+              <span class="metric-symbol">S<sub>phys</sub></span>
+            </article>
+          </div>
+          <div class="score-explanation">
+            <p>
+              <strong>Total = S<sub>code</sub> + S<sub>visual</sub></strong
+              ><span
+                >A score out of 100. The physical-assertion pass rate is
+                reported separately.</span
+              >
+            </p>
+            <p>
+              <strong>Conservation checks</strong
+              ><span
+                >Residuals on executed trajectories provide a companion
+                diagnostic for momentum, energy, and scenario-appropriate
+                constraints.</span
+              >
+            </p>
+          </div>
+          <div class="assertion-examples">
+            <div class="subsection-heading">
+              <h3>From an instruction to a physical check</h3>
+              <p>436 expert-written assertions across the 200 test examples.</p>
+            </div>
+            <div class="assertion-grid">
+              <article>
+                <span class="example-label">Motion &amp; contact</span>
+                <h4>“A cube sliding down an incline.”</h4>
+                <p>
+                  Check that displacement stays within 10° of the downhill
+                  direction, with no penetration below the incline plane.
+                </p>
+              </article>
+              <article>
+                <span class="example-label">Elastic response</span>
+                <h4>“A ball bouncing on a trampoline.”</h4>
+                <p>
+                  Check that the first rebound height falls between 0.6 and 0.95
+                  times the initial height.
+                </p>
+              </article>
+              <article>
+                <span class="example-label">Fluid dynamics</span>
+                <h4>“Raindrops with ripple effects.”</h4>
+                <p>
+                  Check for at least three concentric surface waves within 0.3
+                  seconds of the first impact.
+                </p>
+              </article>
+            </div>
+            <p class="section-note">
+              Assertions are authored from the instruction alone, independently
+              of candidate implementations, and reviewed by a second expert.
+              This provides a direct physical check alongside perceptual scores.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="method-title"
+        class="section container"
+        id="method"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / The reference framework</p>
+            <h2 id="method-title">Generate. Correct. Refine<span>.</span></h2>
+          </div>
+          <p>SMRF · Self-Corrective Multi-Agent<br />Refinement Framework</p>
+        </div>
+        <p class="section-lead method-lead">
+          Three specialized agents share the work of turning a scenario into a
+          physically grounded simulation.
+        </p>
+        <ol class="agent-steps">
+          <li>
+            <span class="step-number">01 / SG</span>
+            <h3>Simulation Generator</h3>
+            <p>
+              Generate initial Genesis code from the instruction and engine
+              documentation.
+            </p>
+            <span class="training-label">Supervised fine-tuning</span>
+          </li>
+          <li>
+            <span class="step-number">02 / EC</span>
+            <h3>Error Corrector</h3>
+            <p>
+              Use runtime feedback to diagnose failed executions and attempt up
+              to three rounds of correction.
+            </p>
+            <span class="training-label">Specialized error–fix training</span>
+          </li>
+          <li>
+            <span class="step-number">03 / SR</span>
+            <h3>Simulation Refiner</h3>
+            <p>
+              After successful execution, refine physical parameters and code
+              quality using learned preferences.
+            </p>
+            <span class="training-label">SFT + preference optimization</span>
+          </li>
+        </ol>
+        <details class="figure-details">
+          <summary>
+            Explore the full SMRF framework <span aria-hidden="true">+</span>
+          </summary>
+          <figure>
+            <img
+              alt="SMRF execution flow: the generator creates code, runtime failures invoke the error corrector, and successful executions proceed to the simulation refiner."
+              height="1291"
+              loading="lazy"
+              src="assets/images/smrf.webp"
+              width="2400"
+            />
+            <figcaption>
+              The error corrector is triggered by execution failure. Detecting
+              and repairing physics errors in programs that already run remains
+              an open direction.
+            </figcaption>
+          </figure>
+        </details>
+      </section>
+      <section
+        aria-labelledby="results-title"
+        class="section results-section"
+        id="results"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">05 / Evaluation</p>
+              <h2 id="results-title">Results, on three axes<span>.</span></h2>
+            </div>
+            <a class="text-link" download="" href="assets/results.csv"
+              >Download results <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="result-highlights">
+            <div>
+              <strong>67.2<small>/100</small></strong
+              ><span>SMRF total score</span>
+            </div>
+            <div>
+              <strong>+31.3<small>pts</small></strong
+              ><span>over the best proprietary baseline</span>
+            </div>
+            <div>
+              <strong>70.6<small>%</small></strong
+              ><span>physical assertions passed</span>
+            </div>
+          </div>
+          <div class="table-toolbar">
+            <p>Genesis test set · 200 examples · avg@5</p>
+            <div aria-label="Sort results" class="sort-controls" hidden="">
+              <span>Sort by</span
+              ><button aria-pressed="true" data-sort="total" type="button">
+                Total</button
+              ><button aria-pressed="false" data-sort="physics" type="button">
+                Physics
+              </button>
+            </div>
+          </div>
+          <div
+            aria-label="PhysCodeBench model comparison"
+            class="table-scroll"
+            role="region"
+            tabindex="0"
+          >
+            <table class="results-table">
+              <caption>
+                Results reported in Table 1 of the revised manuscript. Code and
+                visual scores are each out of 50; total is out of 100. Physical
+                correctness is the assertion pass rate.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Code <span>/50</span></th>
+                  <th scope="col">Visual <span>/50</span></th>
+                  <th aria-sort="descending" data-column="total" scope="col">
+                    Total <span>/100</span>
+                  </th>
+                  <th data-column="physics" scope="col">
+                    Physics <span>%</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="ours" data-physics="70.6" data-total="67.2">
+                  <th scope="row">
+                    SMRF + SFT + DPO<span class="model-kind">Multi-agent</span>
+                  </th>
+                  <td>33.2</td>
+                  <td>34.0</td>
+                  <td>67.2</td>
+                  <td>70.6</td>
+                </tr>
+                <tr class="" data-physics="63.5" data-total="61.6">
+                  <th scope="row">
+                    SMRF + SFT<span class="model-kind">Multi-agent</span>
+                  </th>
+                  <td>30.5</td>
+                  <td>31.1</td>
+                  <td>61.6</td>
+                  <td>63.5</td>
+                </tr>
+                <tr class="" data-physics="32.1" data-total="37.5">
+                  <th scope="row">
+                    DRDQ-32B + SFT + DPO<span class="model-kind"
+                      >Single-agent · fine-tuned</span
+                    >
+                  </th>
+                  <td>18.4</td>
+                  <td>19.1</td>
+                  <td>37.5</td>
+                  <td>32.1</td>
+                </tr>
+                <tr class="" data-physics="23.8" data-total="35.9">
+                  <th scope="row">
+                    Claude-3.5-Sonnet<span class="model-kind"
+                      >Proprietary · zero-shot</span
+                    >
+                  </th>
+                  <td>17.0</td>
+                  <td>18.9</td>
+                  <td>35.9</td>
+                  <td>23.8</td>
+                </tr>
+                <tr class="" data-physics="28.9" data-total="35.4">
+                  <th scope="row">
+                    DRDQ-32B + SFT<span class="model-kind"
+                      >Single-agent · fine-tuned</span
+                    >
+                  </th>
+                  <td>17.2</td>
+                  <td>18.2</td>
+                  <td>35.4</td>
+                  <td>28.9</td>
+                </tr>
+                <tr class="" data-physics="21.6" data-total="33.8">
+                  <th scope="row">
+                    GPT-4o<span class="model-kind"
+                      >Proprietary · zero-shot</span
+                    >
+                  </th>
+                  <td>15.7</td>
+                  <td>18.1</td>
+                  <td>33.8</td>
+                  <td>21.6</td>
+                </tr>
+                <tr class="" data-physics="30.4" data-total="33.7">
+                  <th scope="row">
+                    SMRF (base)<span class="model-kind">Multi-agent</span>
+                  </th>
+                  <td>16.2</td>
+                  <td>17.5</td>
+                  <td>33.7</td>
+                  <td>30.4</td>
+                </tr>
+                <tr class="" data-physics="19.7" data-total="31.6">
+                  <th scope="row">
+                    Gemini-2.0-Pro<span class="model-kind"
+                      >Proprietary · zero-shot</span
+                    >
+                  </th>
+                  <td>14.8</td>
+                  <td>16.8</td>
+                  <td>31.6</td>
+                  <td>19.7</td>
+                </tr>
+                <tr class="" data-physics="17.9" data-total="29.5">
+                  <th scope="row">
+                    DeepSeek-R1<span class="model-kind"
+                      >Open-weight · zero-shot</span
+                    >
+                  </th>
+                  <td>13.8</td>
+                  <td>15.7</td>
+                  <td>29.5</td>
+                  <td>17.9</td>
+                </tr>
+                <tr class="" data-physics="16.2" data-total="27.6">
+                  <th scope="row">
+                    DRDQ-32B<span class="model-kind"
+                      >Open-weight · zero-shot</span
+                    >
+                  </th>
+                  <td>12.0</td>
+                  <td>15.6</td>
+                  <td>27.6</td>
+                  <td>16.2</td>
+                </tr>
+                <tr class="" data-physics="7.4" data-total="15.5">
+                  <th scope="row">
+                    QwQ-32B<span class="model-kind"
+                      >Open-weight · zero-shot</span
+                    >
+                  </th>
+                  <td>6.7</td>
+                  <td>8.8</td>
+                  <td>15.5</td>
+                  <td>7.4</td>
+                </tr>
+                <tr class="" data-physics="0.9" data-total="1.9">
+                  <th scope="row">
+                    Qwen-2.5-32B<span class="model-kind"
+                      >Open-weight · zero-shot</span
+                    >
+                  </th>
+                  <td>0.8</td>
+                  <td>1.1</td>
+                  <td>1.9</td>
+                  <td>0.9</td>
+                </tr>
+                <tr class="oracle" data-physics="98.6" data-total="94.1">
+                  <th scope="row">
+                    Expert reference (oracle)<span class="model-kind"
+                      >Oracle · reference implementations</span
+                    >
+                  </th>
+                  <td>50.0</td>
+                  <td>44.1</td>
+                  <td>94.1</td>
+                  <td>98.6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="section-note">
+            DRDQ-32B = DeepSeek-R1-Distill-Qwen-32B. All systems use the
+            manuscript's shared inference budget. The expert reference row is an
+            oracle, not a competing model. Full protocols, ablations, and
+            limitations are in the updated paper.
+          </p>
+          <p aria-live="polite" class="sr-only" id="sort-status"></p>
+          <figure class="qualitative-figure">
+            <a
+              aria-label="Open qualitative comparison figure"
+              href="assets/images/qualitative.webp"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                alt="Qualitative comparison of four systems on rain with ripple effects and lateral collapse of a LEGO tower. SMRF produces ripples, splashes, and progressive toppling."
+                height="493"
+                loading="lazy"
+                src="assets/images/qualitative.webp"
+                width="2400"
+            /></a>
+            <figcaption>
+              Frame sequences from the paper: fluid interactions and progressive
+              rigid-body collapse.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section
+        aria-labelledby="analysis-title"
+        class="section container analysis-section"
+        id="analysis"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">06 / A closer look</p>
+            <h2 id="analysis-title">Where the gains come from<span>.</span></h2>
+          </div>
+          <a class="text-link" download="" href="assets/analysis.json"
+            >Analysis data <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div
+          aria-label="Choose an experiment breakdown"
+          class="analysis-tabs"
+          hidden=""
+        >
+          <button data-analysis="domain" id="analysis-tab-domain" type="button">
+            Physical domains</button
+          ><button
+            data-analysis="difficulty"
+            id="analysis-tab-difficulty"
+            type="button"
+          >
+            Task difficulty</button
+          ><button
+            data-analysis="ablation"
+            id="analysis-tab-ablation"
+            type="button"
+          >
+            Component ablation
+          </button>
+        </div>
+        <div class="analysis-panel" id="analysis-domain">
+          <div class="analysis-summary">
+            <h3>Gains across all four physical domains.</h3>
+            <p>
+              The full framework leads the best proprietary baseline by
+              29.5–32.8 total-score points across domains. Fluids remain the
+              most challenging setting, requiring coherent flow, interactions,
+              and numerical stability.
+            </p>
+          </div>
+          <div
+            aria-label="Selected methods from the domain breakdown in the technical appendix. All values are total scores out of 100."
+            class="table-scroll detail-scroll"
+            role="region"
+            tabindex="0"
+          >
+            <table class="detail-table">
+              <caption>
+                Selected methods from the domain breakdown in the technical
+                appendix. All values are total scores out of 100.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Rigid</th>
+                  <th scope="col">Soft</th>
+                  <th scope="col">Fluid</th>
+                  <th scope="col">Mechanics</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <th scope="row">Claude-3.5-Sonnet</th>
+                  <td>39.9</td>
+                  <td>32.9</td>
+                  <td>29.9</td>
+                  <td>40.8</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">DRDQ-32B + SFT + DPO</th>
+                  <td>41.4</td>
+                  <td>34.5</td>
+                  <td>31.5</td>
+                  <td>42.4</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">SMRF + SFT</th>
+                  <td>66.2</td>
+                  <td>58.4</td>
+                  <td>54.3</td>
+                  <td>67.1</td>
+                </tr>
+                <tr class="ours">
+                  <th scope="row">SMRF + SFT + DPO</th>
+                  <td>72.3</td>
+                  <td>63.2</td>
+                  <td>59.4</td>
+                  <td>73.6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="analysis-panel" id="analysis-difficulty">
+          <div class="analysis-summary">
+            <h3>Compound physics is still difficult.</h3>
+            <p>
+              Hard scenarios combine three or more physical laws, multiple
+              phases, or sensitive parameter regimes. SMRF reaches 53.0 on hard
+              tasks, compared with 24.5 for the strongest fine-tuned single
+              agent, a 28.5-point advantage.
+            </p>
+          </div>
+          <div
+            aria-label="Total score by difficulty, on 116 easy and 84 hard test examples."
+            class="table-scroll detail-scroll"
+            role="region"
+            tabindex="0"
+          >
+            <table class="detail-table">
+              <caption>
+                Total score by difficulty, on 116 easy and 84 hard test
+                examples.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Easy</th>
+                  <th scope="col">Hard</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <th scope="row">GPT-4o</th>
+                  <td>43.0</td>
+                  <td>21.1</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">Claude-3.5-Sonnet</th>
+                  <td>45.2</td>
+                  <td>23.1</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">Gemini-2.0-Pro</th>
+                  <td>40.7</td>
+                  <td>19.0</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">DRDQ-32B + SFT + DPO</th>
+                  <td>46.9</td>
+                  <td>24.5</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">SMRF (base)</th>
+                  <td>42.8</td>
+                  <td>21.1</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">SMRF + SFT</th>
+                  <td>72.1</td>
+                  <td>47.1</td>
+                </tr>
+                <tr class="ours">
+                  <th scope="row">SMRF + SFT + DPO</th>
+                  <td>77.5</td>
+                  <td>53.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="analysis-panel" id="analysis-ablation">
+          <div class="analysis-summary">
+            <h3>Specialized correction contributes the most.</h3>
+            <p>
+              Removing the Error Corrector reduces the total by 11.3 points and
+              the assertion pass rate by 17.8 percentage points. Removing
+              refinement or preference alignment also reduces both metrics.
+            </p>
+          </div>
+          <div
+            aria-label="Component ablation on the 200-example Genesis test set, avg@5. Physics is the separate physical-assertion pass rate."
+            class="table-scroll detail-scroll"
+            role="region"
+            tabindex="0"
+          >
+            <table class="detail-table">
+              <caption>
+                Component ablation on the 200-example Genesis test set, avg@5.
+                Physics is the separate physical-assertion pass rate.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Configuration</th>
+                  <th scope="col">Total /100</th>
+                  <th scope="col">Physics %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="ours">
+                  <th scope="row">Full SMRF + SFT + DPO</th>
+                  <td>67.2</td>
+                  <td>70.6</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">without EC</th>
+                  <td>55.9</td>
+                  <td>52.8</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">without SR</th>
+                  <td>58.4</td>
+                  <td>59.8</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">SR without DPO</th>
+                  <td>61.6</td>
+                  <td>63.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="transfer-study">
+          <div class="subsection-heading">
+            <h3>From Genesis to MuJoCo</h3>
+            <p>Testing transfer beyond one engine's API.</p>
+          </div>
+          <div class="transfer-grid">
+            <div class="transfer-copy">
+              <div class="transfer-score">
+                <strong>41.2</strong><span>zero-shot transfer score</span>
+              </div>
+              <p>
+                Genesis-trained SMRF transfers to MuJoCo without additional
+                training and exceeds the evaluated zero-shot baselines. With 250
+                API-mapping examples, its score increases to
+                <strong>58.3</strong>.
+              </p>
+              <p>
+                This retains <strong>87.9%</strong> of its Genesis score on the
+                <em>same 120 instructions</em> (58.3 vs. 66.3). The adapted and
+                zero-shot settings are shown separately.
+              </p>
+            </div>
+            <div
+              aria-label="MuJoCo-native test subset: 120 instructions. Adaptation examples are additional MuJoCo API-mapping samples."
+              class="table-scroll detail-scroll"
+              role="region"
+              tabindex="0"
+            >
+              <table class="detail-table">
+                <caption>
+                  MuJoCo-native test subset: 120 instructions. Adaptation
+                  examples are additional MuJoCo API-mapping samples.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Approach</th>
+                    <th scope="col">Adaptation examples</th>
+                    <th scope="col">Total /100</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <th scope="row">GPT-4o (zero-shot)</th>
+                    <td>0</td>
+                    <td>26.8</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">Gemini-2.0-Pro (zero-shot)</th>
+                    <td>0</td>
+                    <td>24.9</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">Claude-3.5-Sonnet (zero-shot)</th>
+                    <td>0</td>
+                    <td>28.5</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">DRDQ-32B + SFT + DPO (adapted)</th>
+                    <td>250</td>
+                    <td>36.7</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">SMRF (Genesis-trained, transfer)</th>
+                    <td>0</td>
+                    <td>41.2</td>
+                  </tr>
+                  <tr class="ours">
+                    <th scope="row">SMRF + adaptation samples</th>
+                    <td>250</td>
+                    <td>58.3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="evidence-grid">
+          <article>
+            <p class="eyebrow">Conservation diagnostics</p>
+            <h3>
+              <strong>81.4<small>%</small></strong
+              ><span>vs. 35.3% for Claude-3.5-Sonnet</span>
+            </h3>
+            <p>
+              Mean pass rate across four checks: momentum drift, free-fall or
+              incline motion, and elastic and inelastic energy behavior. Checks
+              use a 5% tolerance on executed trajectories in the rigid-body and
+              mechanics subset; each applies to a different set of scenarios.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">Human evaluation</p>
+            <div class="human-scores">
+              <div><strong>4.5</strong><span>Physical accuracy</span></div>
+              <div><strong>4.2</strong><span>Code readability</span></div>
+              <div><strong>4.6</strong><span>Usefulness</span></div>
+            </div>
+            <p>
+              Ratings on a 1–5 scale from 10 participants across 40 prompts
+              where all compared systems produced executable outputs. SMRF
+              received the highest ratings in all three dimensions.
+            </p>
+          </article>
+        </div>
+        <details class="scope-details">
+          <summary>
+            Scope and current limitations <span aria-hidden="true">+</span>
+          </summary>
+          <ul>
+            <li>
+              The task targets simulation through high-level engine APIs. It
+              does not evaluate implementation of numerical solvers.
+            </li>
+            <li>
+              The Error Corrector runs after execution failures. Physically
+              incorrect programs that already execute can bypass correction.
+            </li>
+            <li>
+              Cross-engine evaluation covers 120 of the 200 test instructions,
+              with approximate fluid coverage in MuJoCo.
+            </li>
+            <li>
+              The three-agent pipeline incurs additional inference cost compared
+              with a single agent.
+            </li>
+          </ul>
+        </details>
+      </section>
+      <section
+        aria-labelledby="citation-title"
+        class="section container citation-section"
+        id="citation"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">07 / Reference</p>
+            <h2 id="citation-title">Build on this work<span>.</span></h2>
+          </div>
+          <button class="button copy-button" hidden="" type="button">
+            Copy BibTeX <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <pre
+          aria-label="BibTeX citation"
+          class="citation-code"
+          tabindex="0"
+        ><code id="bibtex">@article{xie2026physcodebench,
+  title={PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation
+         of 3D Scenes via Self-Corrective Multi-Agent Refinement},
+  author={Xie, Tianyidan and Wang, Peiyu and Qian, Yuyi and Wang, Yuxuan
+          and Ma, Rui and Tai, Ying and Wu, Song and Wang, Qian
+          and Wang, Lanjun and Yi, Zili},
+  journal={arXiv preprint arXiv:2604.23580},
+  year={2026},
+  url={https://arxiv.org/abs/2604.23580}
+}</code></pre>
+        <p aria-live="polite" class="copy-status" role="status"></p>
+        <div class="release-block">
+          <p>
+            <strong>Code, data, and evaluation tools</strong
+            ><span
+              >Release forthcoming. For questions about the project, contact
+              <a href="mailto:sealical@outlook.com">Tianyidan Xie</a>.</span
+            >
+          </p>
+          <a class="text-link" href="assets/physcodebench.pdf"
+            >Read the updated paper <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <p class="version-note">
+          This page presents the revised manuscript. The arXiv link currently
+          points to the earlier public version.
+        </p>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <p>© 2026 PhysCodeBench authors</p>
+      <div>
+        <a href="../"
+          >Tianyidan Xie's homepage <span aria-hidden="true">↗</span></a
+        ><a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

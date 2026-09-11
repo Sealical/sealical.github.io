@@ -1,0 +1,207 @@
+{
+  "source": "Revised manuscript and technical appendix; author-confirmed empirical results",
+  "results": {
+    "domain": [
+      {
+        "model": "GPT-4o",
+        "values": [37.6, 30.8, 27.9, 38.8]
+      },
+      {
+        "model": "Claude-3.5-Sonnet",
+        "values": [39.9, 32.9, 29.9, 40.8]
+      },
+      {
+        "model": "Gemini-2.0-Pro",
+        "values": [35.5, 28.5, 25.6, 36.5]
+      },
+      {
+        "model": "DeepSeek-R1",
+        "values": [33.4, 26.5, 23.5, 34.4]
+      },
+      {
+        "model": "DRDQ-32B",
+        "values": [31.5, 24.6, 21.7, 32.5]
+      },
+      {
+        "model": "Qwen-2.5-32B",
+        "values": [2.7, 1.2, 0.7, 2.9]
+      },
+      {
+        "model": "QwQ-32B",
+        "values": [18.3, 13.4, 11.4, 18.9]
+      },
+      {
+        "model": "DRDQ-32B + SFT",
+        "values": [39.3, 32.4, 29.5, 40.3]
+      },
+      {
+        "model": "DRDQ-32B + SFT + DPO",
+        "values": [41.4, 34.5, 31.5, 42.4]
+      },
+      {
+        "model": "SMRF (base)",
+        "values": [37.6, 30.7, 27.7, 38.5]
+      },
+      {
+        "model": "SMRF + SFT",
+        "values": [66.2, 58.4, 54.3, 67.1]
+      },
+      {
+        "model": "SMRF + SFT + DPO",
+        "values": [72.3, 63.2, 59.4, 73.6]
+      }
+    ],
+    "difficulty": [
+      {
+        "model": "GPT-4o",
+        "values": [43.0, 21.1]
+      },
+      {
+        "model": "Claude-3.5-Sonnet",
+        "values": [45.2, 23.1]
+      },
+      {
+        "model": "Gemini-2.0-Pro",
+        "values": [40.7, 19.0]
+      },
+      {
+        "model": "DRDQ-32B + SFT + DPO",
+        "values": [46.9, 24.5]
+      },
+      {
+        "model": "SMRF (base)",
+        "values": [42.8, 21.1]
+      },
+      {
+        "model": "SMRF + SFT",
+        "values": [72.1, 47.1]
+      },
+      {
+        "model": "SMRF + SFT + DPO",
+        "values": [77.5, 53.0]
+      }
+    ],
+    "ablation": [
+      {
+        "model": "Full SMRF + SFT + DPO",
+        "values": [33.2, 34.0, 67.2, 70.6]
+      },
+      {
+        "model": "without EC",
+        "values": [27.4, 28.5, 55.9, 52.8]
+      },
+      {
+        "model": "without SR",
+        "values": [28.8, 29.6, 58.4, 59.8]
+      },
+      {
+        "model": "SR without DPO",
+        "values": [30.5, 31.1, 61.6, 63.5]
+      }
+    ],
+    "cross_engine": [
+      {
+        "model": "GPT-4o (zero-shot)",
+        "values": [0.0, 26.8]
+      },
+      {
+        "model": "Gemini-2.0-Pro (zero-shot)",
+        "values": [0.0, 24.9]
+      },
+      {
+        "model": "Claude-3.5-Sonnet (zero-shot)",
+        "values": [0.0, 28.5]
+      },
+      {
+        "model": "DRDQ-32B + SFT + DPO (adapted)",
+        "values": [250.0, 36.7]
+      },
+      {
+        "model": "SMRF (Genesis-trained, transfer)",
+        "values": [0.0, 41.2]
+      },
+      {
+        "model": "SMRF + adaptation samples",
+        "values": [250.0, 58.3]
+      }
+    ],
+    "conservation": [
+      {
+        "model": "Momentum drift",
+        "values": [83.7, 37.5, 44.8]
+      },
+      {
+        "model": "Free-fall / incline",
+        "values": [85.0, 40.2, 47.2]
+      },
+      {
+        "model": "Energy (elastic)",
+        "values": [76.2, 28.9, 35.4]
+      },
+      {
+        "model": "Energy (inelastic)",
+        "values": [80.7, 34.6, 41.4]
+      },
+      {
+        "model": "Aggregate",
+        "values": [81.4, 35.3, 42.2]
+      }
+    ],
+    "user_study": [
+      {
+        "model": "GPT-4o",
+        "values": [3.1, 3.5, 3.4]
+      },
+      {
+        "model": "Gemini-2.0-Pro",
+        "values": [3.0, 3.6, 3.2]
+      },
+      {
+        "model": "Claude-3.5-Sonnet",
+        "values": [3.2, 3.7, 3.4]
+      },
+      {
+        "model": "DRDQ-32B + SFT + DPO",
+        "values": [3.4, 3.5, 3.6]
+      },
+      {
+        "model": "SMRF + SFT + DPO",
+        "values": [4.5, 4.2, 4.6]
+      }
+    ]
+  },
+  "columns": {
+    "domain": [
+      "Rigid-body total /100",
+      "Soft-body total /100",
+      "Fluid total /100",
+      "Mechanics total /100"
+    ],
+    "difficulty": ["Easy total /100", "Hard total /100"],
+    "ablation": [
+      "Code /50",
+      "Visual /50",
+      "Total /100",
+      "Physical-assertion pass rate %"
+    ],
+    "cross_engine": ["Additional MuJoCo API-mapping examples", "Total /100"],
+    "conservation": [
+      "SMRF + SFT + DPO pass rate %",
+      "Claude-3.5-Sonnet pass rate %",
+      "DRDQ-32B + SFT + DPO pass rate %"
+    ],
+    "user_study": [
+      "Physical accuracy (1\u20135)",
+      "Code readability (1\u20135)",
+      "Usefulness (1\u20135)"
+    ]
+  },
+  "protocols": {
+    "domain": "Genesis test set, 200 instructions; all 12 evaluated systems, excluding the expert oracle.",
+    "difficulty": "116 easy and 84 hard test instructions; avg@5 total score.",
+    "ablation": "Genesis test set, 200 instructions; avg@5. Physics is reported separately from Total.",
+    "cross_engine": "120 MuJoCo-native test instructions. Zero-shot and adapted systems are identified by the additional API-mapping sample count. Adapted SMRF retention uses its Genesis score of 66.3 on the same subset.",
+    "conservation": "Rows label physical checks, not models. Tests apply to executed trajectories in the 102-case rigid-body/mechanics subset, with 5% tolerance and different applicability per check. Aggregate is the unweighted mean of the four check pass rates.",
+    "user_study": "10 participants; 40 prompts where all five systems execute; anonymized output; scores on a 1\u20135 scale."
+  }
+}

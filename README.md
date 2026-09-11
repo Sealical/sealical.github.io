@@ -28,6 +28,8 @@ GitHub Pages serves the `master` branch, repository root. `.nojekyll` keeps this
 
 The original 2018 blog landing page is preserved, byte for byte, in `blog/index.html`. Existing article URLs, archives, feeds, and blog assets retain their original paths. The ST-Mem project at `/st-mem/` is served by the separate `Sealical/st-mem` repository; its project and benchmark links remain absolute URLs.
 
+The PhysCodeBench project is served from `physcodebench/` in this repository, with its own static page, simulation comparisons, experimental analysis, and single-column revised paper. See [its maintenance notes](physcodebench/README.md) for content and media sources.
+
 ## Design and image sources
 
 The design is original. Research-first information structure was informed by the personal sites of [Saining Xie](https://www.sainingxie.com/), [Jiajun Wu](https://jiajunwu.com/), and [Shuran Song](https://shurans.github.io/). No code or portraits were copied from these sites.

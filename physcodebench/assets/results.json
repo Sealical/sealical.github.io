@@ -1,0 +1,116 @@
+{
+  "source": "Revised manuscript, Table 1",
+  "protocol": "Genesis; 200 test examples; avg@5",
+  "metrics": {
+    "code": "out of 50",
+    "visual": "out of 50",
+    "total": "code + visual, out of 100",
+    "physics": "physical-assertion pass rate (%)"
+  },
+  "results": [
+    {
+      "model": "GPT-4o",
+      "kind": "Proprietary \u00b7 zero-shot",
+      "code": 15.7,
+      "visual": 18.1,
+      "total": 33.8,
+      "physics": 21.6
+    },
+    {
+      "model": "Claude-3.5-Sonnet",
+      "kind": "Proprietary \u00b7 zero-shot",
+      "code": 17.0,
+      "visual": 18.9,
+      "total": 35.9,
+      "physics": 23.8
+    },
+    {
+      "model": "Gemini-2.0-Pro",
+      "kind": "Proprietary \u00b7 zero-shot",
+      "code": 14.8,
+      "visual": 16.8,
+      "total": 31.6,
+      "physics": 19.7
+    },
+    {
+      "model": "DeepSeek-R1",
+      "kind": "Open-weight \u00b7 zero-shot",
+      "code": 13.8,
+      "visual": 15.7,
+      "total": 29.5,
+      "physics": 17.9
+    },
+    {
+      "model": "DRDQ-32B",
+      "kind": "Open-weight \u00b7 zero-shot",
+      "code": 12.0,
+      "visual": 15.6,
+      "total": 27.6,
+      "physics": 16.2
+    },
+    {
+      "model": "Qwen-2.5-32B",
+      "kind": "Open-weight \u00b7 zero-shot",
+      "code": 0.8,
+      "visual": 1.1,
+      "total": 1.9,
+      "physics": 0.9
+    },
+    {
+      "model": "QwQ-32B",
+      "kind": "Open-weight \u00b7 zero-shot",
+      "code": 6.7,
+      "visual": 8.8,
+      "total": 15.5,
+      "physics": 7.4
+    },
+    {
+      "model": "DRDQ-32B + SFT",
+      "kind": "Single-agent \u00b7 fine-tuned",
+      "code": 17.2,
+      "visual": 18.2,
+      "total": 35.4,
+      "physics": 28.9
+    },
+    {
+      "model": "DRDQ-32B + SFT + DPO",
+      "kind": "Single-agent \u00b7 fine-tuned",
+      "code": 18.4,
+      "visual": 19.1,
+      "total": 37.5,
+      "physics": 32.1
+    },
+    {
+      "model": "SMRF (base)",
+      "kind": "Multi-agent",
+      "code": 16.2,
+      "visual": 17.5,
+      "total": 33.7,
+      "physics": 30.4
+    },
+    {
+      "model": "SMRF + SFT",
+      "kind": "Multi-agent",
+      "code": 30.5,
+      "visual": 31.1,
+      "total": 61.6,
+      "physics": 63.5
+    },
+    {
+      "model": "SMRF + SFT + DPO",
+      "kind": "Multi-agent",
+      "code": 33.2,
+      "visual": 34.0,
+      "total": 67.2,
+      "physics": 70.6
+    },
+    {
+      "model": "Expert reference (oracle)",
+      "kind": "Oracle \u00b7 reference implementations",
+      "code": 50.0,
+      "visual": 44.1,
+      "total": 94.1,
+      "physics": 98.6
+    }
+  ]
+}
